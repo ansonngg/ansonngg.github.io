@@ -1,0 +1,24 @@
+.navbar {
+  position: fixed;
+  background: #1e1e1e;
+  width: 100%;
+  padding: 30px 0;
+  top: 0;
+  z-index: 999;
+}
+
+.navbar-container {
+  max-width: 1300px;
+  margin: auto;
+  padding: 0 40px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-items {
+  font-size: 15px;
+  font-weight: 500;
+  margin-left: 30px;
+  cursor: pointer;
+  user-select: none;
+}
