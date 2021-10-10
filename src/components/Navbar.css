@@ -1,6 +1,6 @@
 .navbar {
+  background: #121212;
   position: fixed;
-  background: #1e1e1e;
   width: 100%;
   padding: 30px 0;
   top: 0;
@@ -10,7 +10,7 @@
 .navbar-container {
   max-width: 1300px;
   margin: auto;
-  padding: 0 40px;
+  padding: 0 30px;
   display: flex;
   justify-content: flex-end;
 }

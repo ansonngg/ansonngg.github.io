@@ -1,9 +1,61 @@
+.home {
+  height: 1000px;
+}
+
+.home .background {
+  position: absolute;
+  display: block;
+  top: 84px;
+  z-index: 0;
+  max-width: min(100vw, 1200px);
+  max-height: 916px;
+}
+
 .title {
   display: flex;
-  height: 100vh;
-  align-items: center;
+  flex-direction: column;
+  height: 1000px;
   justify-content: center;
   font-size: 50px;
-  white-space: pre-wrap;
   user-select: none;
+  padding: 0 30px
+}
+
+.scroll-container {
+  overflow: hidden;
+}
+
+.scroll-text {
+  animation: scroll-animation 8s ease infinite;
+}
+
+@keyframes scroll-animation {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  10%, 35% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+  45% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  60%, 85% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+  95% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
 }

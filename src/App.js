@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import React from 'react';
 import './App.css';
 import { Element } from 'react-scroll';
@@ -8,10 +9,11 @@ function App() {
   return (
     <>
       <Navbar />
-      <Element name="home">
-        <Home />
-      </Element>
-      lorem ipsum
+      <main>
+        <Element name="home">
+          <Home />
+        </Element>
+      </main>
     </>
   );
 }
