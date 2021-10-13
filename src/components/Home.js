@@ -1,14 +1,14 @@
 import React from 'react';
-import Particles from 'particlesjs';
+// import Particles from 'particlesjs';
 import './Home.css';
 
-window.onload = () => {
-  Particles.init({
-    selector: '.home .background',
-    color: '#CCCCCC',
-    connectParticles: true,
-  });
-};
+// window.onload = () => {
+//   Particles.init({
+//     selector: '.home .background',
+//     color: '#CCCCCC',
+//     connectParticles: true,
+//   });
+// };
 
 const scrollText = ['Anson Ng!', 'a Software Developer!'];
 
@@ -42,7 +42,6 @@ class Home extends React.Component {
             </div>
           </div>
         </div>
-        <canvas className="background" />
       </div>
     );
   }
