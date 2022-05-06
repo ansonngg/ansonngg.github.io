@@ -1,4 +1,4 @@
-const godMode = true;
+const godMode = false;
 const gameTime = 60;
 const skillBreakTime = 500;
 const spinSpeed = 1.8;
