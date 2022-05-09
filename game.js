@@ -1,7 +1,7 @@
 const godMode = false;
 const gameTime = 60;
 const skillBreakTime = 500;
-const spinSpeed = 1.8;
+const spinSpeed = 1;
 const spinAccelTime = 3000;
 const spinMaxTime = 5000;
 const spinDecelTime = 2000;
@@ -9,7 +9,7 @@ const spinMoveSpeed = 0.6;
 const spearInterval = 100;
 const spearSpeed = 8;
 const rifleInterval = 150;
-const aoeInterval = 10;
+const aoeInterval = 23;
 const bulletTravelTime = 1000;
 
 let navbar = document.getElementsByClassName('navbar')[0];
@@ -27,7 +27,7 @@ let bulletWidth, bulletHeight;
 let skillRecord = [-1, -2];
 let temp = [];
 let spearRest = false;
-let aoeShot = 0;
+let shootBullet;
 
 let cursorX = -1;
 let cursorY = -1;
@@ -139,13 +139,13 @@ function GameLoop() {
 
 async function EndGame() {
   cancelAnimationFrame(anim);
+  clearInterval(shootBullet);
   attacking = false;
   start = undefined;
   previousTimeStamp = undefined;
   skillRecord = [-1, -2];
   bulletShot = false;
   spearRest = false;
-  aoeShot = 0;
   temp = [];
 
   requestAnimationFrame(EnemyEndGameAnim);
@@ -354,13 +354,19 @@ function AOEAttack(timeStamp) {
     enemy.style.transform = `translate(${stats[1]}px, ${stats[2]}px) rotate(${(Number(stats[3]) + diff * realSpinSpeed) % 360}deg)`;
   } else if (elapsed < spinAccelTime + spinMaxTime) {
     enemy.style.transform = `translate(${stats[1]}px, ${stats[2]}px) rotate(${(Number(stats[3]) + diff * spinSpeed) % 360}deg)`;
-    if (aoeShot < Math.floor((elapsed - spinAccelTime) / aoeInterval) + 1) {
-      FireBullets(1);
-      aoeShot++;
+    if (!bulletShot) {
+      shootBullet = setInterval(() => {
+        FireBullets(1);
+      }, aoeInterval);
+      bulletShot = true;
     }
   } else if (elapsed < spinAccelTime + spinMaxTime + spinDecelTime) {
     let realSpinSpeed = (spinAccelTime + spinMaxTime + spinDecelTime - elapsed) / spinDecelTime * spinSpeed;
     enemy.style.transform = `translate(${stats[1]}px, ${stats[2]}px) rotate(${(Number(stats[3]) + diff * realSpinSpeed) % 360}deg)`;
+    if (bulletShot) {
+      clearInterval(shootBullet);
+      bulletShot = false;
+    }
   }
   
   if (elapsed < spinAccelTime + spinMaxTime + spinDecelTime + skillBreakTime) {
@@ -370,7 +376,6 @@ function AOEAttack(timeStamp) {
     attacking = false;
     start = undefined;
     previousTimeStamp = undefined;
-    aoeShot = 0;
   }
 }
 
