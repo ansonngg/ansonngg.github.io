@@ -36,17 +36,18 @@
 
   .about .image {
     width: 100%;
-    max-width: 100%;
     justify-content: center;
   }
 
   #propic {
     width: 50%;
+    min-width: 250px;
     max-width: 300px;
   }
 
   .about .container {
     width: 50%;
+    min-width: 250px;
     max-width: 300px;
     margin: 0;
     flex-direction: column-reverse;
