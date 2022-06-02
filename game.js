@@ -41,6 +41,10 @@ function sleep(ms) {
 }
 
 function StartGame(event) {
+  if (home.clientWidth < 1200 || home.clientHeight < 900) {
+    return;
+  }
+
   InitGame(event);
   let count = 2;
   let loop = setInterval(() => {
@@ -55,10 +59,6 @@ function StartGame(event) {
 }
 
 function InitGame(event) {
-  if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-    return;
-  }
-
   window.location.href = '#home';
   document.body.classList.add('stop-scrolling');
 
