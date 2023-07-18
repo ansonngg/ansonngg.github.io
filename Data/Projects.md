@@ -1,10 +1,17 @@
+- Tower of Saviors
+- Placeholder.png
+- Professional Project,Gameplay Programming,Visual Effect,Maintenance
+- This is the project I worked on when I was working at Madhead.
+---
 - Operation: Apocalypse
 - OperationApocalypseThumbnail.png
+- Personal Project,Game Design,Level Design,Code
 - Lorem ipsum
 - Lorem ipsum
 ---
 - Visit the Alien
 - VisitTheAlienThumbnail.png
+- Personal Project,Graphics Programming
 - Lorem ipsum
 - Lorem ipsum
 ---

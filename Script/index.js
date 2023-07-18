@@ -176,7 +176,7 @@ fetch("Data/Projects.md")
                     isAnyRowActive = true;
                     let data = [lines[i].substring(2)];
 
-                    while (data.length < 2 && ++i < lines.length) {
+                    while (data.length < 3 && ++i < lines.length) {
                         if (lines[i].substring(0, 2) == "- ") {
                             data.push(lines[i].substring(2));
                         }
@@ -197,6 +197,18 @@ fetch("Data/Projects.md")
 
                     projectDescription = document.createElement("div");
                     projectDescription.className = "project-description";
+
+                    let tagList = document.createElement("div");
+                    tagList.className = "tag-list";
+
+                    data[2].split(",").forEach(tagName => {
+                        let tag = document.createElement("div");
+                        tag.className = "tag";
+                        tag.innerHTML = tagName;
+                        tagList.appendChild(tag);
+                    });
+
+                    projectDescription.appendChild(tagList);
                 }
             }
         }

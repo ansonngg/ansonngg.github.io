@@ -1,11 +1,11 @@
 :root {
+    --font-size: 16px;
     --line-height: 1.75;
     --bg-color: #121212;
     --body-margin: 40px;
     --max-width: 1200px;
     --table-title-width: 200px;
     --size-factor: 1;
-    --font-size: calc(16px * var(--size-factor));
     --big-margin: calc(40px * var(--size-factor));
     --medium-margin: calc(25px * var(--size-factor));
     --small-margin: calc(15px * var(--size-factor));
@@ -129,7 +129,7 @@ footer {
 
 section .section-title {
     margin-bottom: var(--big-margin);
-    font-size: calc(32px * var(--size-factor));
+    font-size: 32px;
 }
 
 .section-content {
@@ -138,10 +138,12 @@ section .section-title {
 
 .table-row {
     display: flex;
+    align-items: flex-start;
 }
 
 .table-title {
     display: flex;
+    align-items: center;
     justify-content: flex-end;
     margin-right: var(--big-margin);
     width: var(--table-title-width);
@@ -220,6 +222,22 @@ section .section-title {
     width: calc((100% - var(--big-margin)) * 0.4);
 }
 
+.tag-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: var(--small-margin);
+}
+
+.tag {
+    margin-bottom: 6px;
+    margin-right: 6px;
+    border: 5px solid rgba(0, 0, 0, 0);
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.08);
+    font-size: 14px;
+    line-height: 1.2;
+}
+
 .footer-wrapper {
     display: flex;
     flex-direction: column;
@@ -239,6 +257,7 @@ section .section-title {
 
 .contact div {
     display: flex;
+    align-items: center;
 }
 
 .contact i {
@@ -257,8 +276,9 @@ section .section-title {
 
 @media screen and (max-width: 700px) {
     :root {
+        --font-size: 14px;
         --body-margin: 20px;
-        --size-factor: 0.75;
+        --size-factor: 0.8;
     }
 
     footer {
@@ -267,6 +287,10 @@ section .section-title {
 
     .nav-list {
         visibility: hidden;
+    }
+
+    section .section-title {
+        font-size: 26px;
     }
 
     .table-row {
@@ -293,5 +317,13 @@ section .section-title {
         margin-right: 0;
         width: 100%;
         height: calc((100vw - 2 * var(--body-margin)) * 0.5625)
+    }
+
+    .project-description {
+        width: 100%;
+    }
+
+    .tag {
+        font-size: 12px;
     }
 }
