@@ -1,0 +1,26 @@
+- Jun 2022
+- Jun 2023
+- Programmer
+- Madhead
+- Maintained and brought new features into the game "Tower of Saviors" using Unity and C#
+- Designed visual effects by using resources from Art Team, writing shaders and utilizing particle system
+- Implemented the logic and designed the UI for gameplay to make new contents live in the game
+- Revamped legacy code into code that fits the current architecture for smoother development
+---
+- Aug 2021
+- Jun 2022
+- Assistant Engineer
+- Hong Kong Centre for Logistics Robotics
+- Assisted the Project Manager to develop a computationally heavy software by using C++ and multithreading
+- Designed and implemented the GUI of the software and integrated them with backend modules
+- Implemented and optimized geometric algorithms given by researchers and modified them when necessary
+- Applied deep learning to solve geometric problems
+---
+- Sep 2017
+- Jul 2021
+- Undergraduate Student
+- The Chinese University of Hong Kong
+- Bachelor of Science in Mathematics
+- Graduated in Enrichment Stream and Computational and Applied Mathematics Stream, a double stream specialization given to students who are capable of delving deep into mathematically advanced research and theories, as well as solving real-life problems by using numerical computation
+- Minors: Computer Science, Japanese Language
+---

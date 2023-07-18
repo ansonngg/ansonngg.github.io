@@ -1,229 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Anson Ng</title>
-  <link rel="icon" href="assets/icon.png">
-  <!-- Style -->
-  <link rel="stylesheet" href="main.css">
-  <link rel="stylesheet" href="home.css">
-  <link rel="stylesheet" href="about.css">
-  <link rel="stylesheet" href="skills.css">
-  <link rel="stylesheet" href="work.css">
-  <!-- Script -->
-  <script src="game.js" defer></script>
-  <script src="https://kit.fontawesome.com/77c8477065.js" crossorigin="anonymous"></script>
-  <!-- Font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
-</head>
-<body>
-  <nav class="navbar">
-    <div class="logo">Anson</div>
-    <div class="navbar-menu">
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#work">Work</a>
-      <a href="#projects">Projects</a>
-    </div>
-    <div class="navbar-list">
-      <i class="fa-solid fa-bars"></i>
-    </div>
-  </nav>
-
-  <section id="home">
-    <div class="title not-start-game" id="short-enemy" onclick="StartGame(event)">Hi, I'm Anson</div>
-    <div class="title not-start-game" id="long-enemy" onclick="StartGame(event)">A Game Developer</div>
-    <div class="timer">3</div>
-  </section>
-
-  <a class="anchor" id="about"></a>
-
-  <section class="about">
-    <div class="title">About</div>
-    <div class="content">
-      <div class="image">
-        <img id="propic" src="assets/propic.jpg" alt="My profile picture">
-      </div>
-      <div class="container">
-        <div class="text">
-          Enthusiastic game developer with formal learning in game design and decent experience in game development. Equipped with strong mathematical ability and proficient in linear algebra, numerical analysis, data structures and computer graphics. Love being a part of a team and coming up with interesting ideas with passionate people.
-        </div>
-        <div class="contact-menu">
-          <a href="https://github.com/ansonngg">
-            <i class="fa-brands fa-github"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/anson-ng-11145b206/">
-            <i class="fa-brands fa-linkedin"></i>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <a class="anchor" id="skills"></a>
-
-  <section class="skills">
-    <div class="title">Skills</div>
-    <div class="content">
-      <div class="container leftmost">
-        <div class="subtitle">Programming</div>
-        <div class="subcontainer">
-          <div class="skill">
-            <div class="skill-info">
-              <div class="subtitle">C/C++</div>
-              <div class="text">10/10</div>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Anson Ng</title>
+        <link rel="icon" href="Asset/Favicon.png" />
+        <!-- Style -->
+        <link rel="stylesheet" href="Style/index.css" />
+        <link rel="stylesheet" href="Style/game.css" />
+        <!-- Script -->
+        <script src="Script/index.js" defer></script>
+        <script src="Script/Game.js" defer></script>
+        <script src="https://kit.fontawesome.com/77c8477065.js" crossorigin="anonymous"></script>
+        <!-- Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+    </head>
+    <body>
+        <nav class="no-caret">
+            <div class="nav-wrapper">
+                <img id="logo" src="Asset/Logo.png" alt="Logo" />
+                <div class="nav-list">
+                    <a class="nav-item" onclick="ScrollToContent('home')">Home</a>
+                    <a class="nav-item" onclick="ScrollToContent('about-anchor')">About Me</a>
+                    <a class="nav-item" onclick="ScrollToContent('experience-anchor')">Experience</a>
+                    <a class="nav-item" onclick="ScrollToContent('projects-anchor')">Projects</a>
+                </div>
             </div>
-            <div class="skill-bar" style="--score: 100%;"></div>
-          </div>
+        </nav>
 
-          <div class="skill">
-            <div class="skill-info">
-              <div class="subtitle">C#</div>
-              <div class="text">8/10</div>
+        <main>
+            <div id="home" class="no-caret">
+                <div id="short-enemy" class="section-title not-start-game" onclick="StartGame(event)">Hi, I'm Anson Ng</div>
+                <div id="long-enemy" class="section-title not-start-game" onclick="StartGame(event)">A Game Developer</div>
+                <div class="timer">3</div>
             </div>
-            <div class="skill-bar" style="--score: 80%;"></div>
-          </div>
 
-          <div class="skill">
-            <div class="skill-info">
-              <div class="subtitle">JavaScript</div>
-              <div class="text">8/10</div>
+            <a id="about-anchor" class="anchor"></a>
+
+            <section id="about">
+                <div class="section-title">About Me</div>
+                <div class="section-content">
+                    <div id="self-intro" class="text"></div>
+                    <div class="table">
+                        <div class="table-row">
+                            <div class="table-title">
+                                <i class="fa-solid fa-code"></i>
+                                <p>Programming</p>
+                            </div>
+                            <div id="programming-list" class="table-content"></div>
+                        </div>
+                        <div class="table-row">
+                            <div class="table-title">
+                                <i class="fa-solid fa-explosion"></i>
+                                <p>Game/Graphics</p>
+                            </div>
+                            <div id="game-or-graphics-list" class="table-content"></div>
+                        </div>
+                        <div class="table-row">
+                            <div class="table-title">
+                                <i class="fa-solid fa-wrench"></i>
+                                <p>Tools</p>
+                            </div>
+                            <div id="tools-list" class="table-content"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <a id="experience-anchor" class="anchor"></a>
+
+            <section id="experience">
+                <div class="section-title">Experience</div>
+                <div class="section-content">
+                    <div id="experience-list" class="table"></div>
+                </div>
+            </section>
+
+            <a id="projects-anchor" class="anchor"></a>
+
+            <section id="projects">
+                <div class="section-title">Projects</div>
+                <div id="projects-list" class="section-content"></div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <div class="contact">
+                    <div><i class="fa-solid fa-envelope"></i> ngkawai9886@gmail.com</div>
+                </div>
+                <div class="social-media">
+                    <a href="https://github.com/ansonngg"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/anson-ng-11145b206/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
             </div>
-            <div class="skill-bar" style="--score: 80%;"></div>
-          </div>
-
-          <div class="skill">
-            <div class="skill-info">
-              <div class="subtitle">Java</div>
-              <div class="text">7/10</div>
-            </div>
-            <div class="skill-bar" style="--score: 70%;"></div>
-          </div>
-
-          <div class="skill">
-            <div class="skill-info">
-              <div class="subtitle">Python</div>
-              <div class="text">7/10</div>
-            </div>
-            <div class="skill-bar" style="--score: 70%;"></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="container">
-        <div class="subtitle">Game/Graphics</div>
-        <div class="subcontainer">
-          <div class="skill">
-            <div class="skill-info">
-              <div class="subtitle">OpenGL</div>
-              <div class="text">8/10</div>
-            </div>
-            <div class="skill-bar" style="--score: 80%;"></div>
-          </div>
-
-          <div class="skill">
-            <div class="skill-info">
-              <div class="subtitle">GLSL</div>
-              <div class="text">8/10</div>
-            </div>
-            <div class="skill-bar" style="--score: 80%;"></div>
-          </div>
-
-          <div class="skill">
-            <div class="skill-info">
-              <div class="subtitle">Unity</div>
-              <div class="text">7/10</div>
-            </div>
-            <div class="skill-bar" style="--score: 70%;"></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="container">
-        <div class="subtitle">Languages</div>
-        <div class="subcontainer">
-          <div class="skill">
-            <div class="skill-info">
-              <div class="subtitle">Cantonese</div>
-              <div class="text">10/10</div>
-            </div>
-            <div class="skill-bar" style="--score: 100%;"></div>
-          </div>
-
-          <div class="skill">
-            <div class="skill-info">
-              <div class="subtitle">English</div>
-              <div class="text">8/10</div>
-            </div>
-            <div class="skill-bar" style="--score: 80%;"></div>
-          </div>
-
-          <div class="skill">
-            <div class="skill-info">
-              <div class="subtitle">Mandarin</div>
-              <div class="text">7/10</div>
-            </div>
-            <div class="skill-bar" style="--score: 70%;"></div>
-          </div>
-
-          <div class="skill">
-            <div class="skill-info">
-              <div class="subtitle">Janpanese</div>
-              <div class="text">5/10</div>
-            </div>
-            <div class="skill-bar" style="--score: 50%;"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <a class="anchor" id="work"></a>
-
-  <section class="work">
-    <div class="title">Work</div>
-    <div class="content">
-      <div class="timeline">
-        <div class="container left">
-          <div class="subtitle">Mad Head Limited</div>
-          <div class="subcontainer">
-            <div>Programmer</div>
-            <div>Jun 2022 - Present</div>
-          </div>
-          <div class="text">
-
-          </div>
-        </div>
-
-        <div class="container right">
-          <div class="subtitle">Hong Kong Centre for Logistics Robotics</div>
-          <div class="subcontainer">
-            <div>Assistant Engineer</div>
-            <div>Aug 2021 - Jun 2022</div>
-          </div>
-          <div class="text">
-            Designed and implemented the GUI of software and integrated them with backend modules<br>
-            Implemented and optimized geometric algorithms and modified them when necessary<br>
-            Applied deep learning to solve geometric problems
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <a class="anchor" id="projects"></a>
-
-  <section class="projects">
-    <div class="title">Projects</div>
-    <div class="content">
-      
-    </div>
-  </section>
-</body>
+            <div class="copyright">&copy; 2023 Anson Ng. All rights reserved.</div>
+        </footer>
+    </body>
 </html>

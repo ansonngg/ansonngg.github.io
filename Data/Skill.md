@@ -1,0 +1,19 @@
+- programming
+- C/C++
+- C#
+- Java
+- JavaScript
+- Python
+---
+- game-or-graphics
+- OpenGL & GLSL
+- Unity
+- Unreal Engine
+---
+- tools
+- Figma
+- Git
+- Jenkins
+- Jira
+- Photoshop
+---

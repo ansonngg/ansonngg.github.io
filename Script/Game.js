@@ -12,7 +12,7 @@ const rifleInterval = 150;
 const aoeInterval = 23;
 const bulletTravelTime = 1000;
 
-let navbar = document.getElementsByClassName('navbar')[0];
+let navbar = document.getElementsByTagName('nav')[0];
 let home = document.getElementById('home');
 let timer = document.getElementsByClassName('timer')[0];
 let enemy, notEnemy;

@@ -1,0 +1,86 @@
+#home .section-title.not-start-game {
+    cursor: pointer;
+}
+
+#home .timer {
+    font-size: 72px;
+    opacity: 0.2;
+    z-index: -100;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    visibility: hidden;
+}
+
+nav.start-game {
+    animation: navbar-start-game-anim 2s linear forwards;
+}
+
+@keyframes navbar-start-game-anim {
+    from {
+        top: 0;
+    }
+    to {
+        top: -100px;
+    }
+}
+
+.not-enemy.start-game {
+    animation: not-enemy-start-game-anim 2s linear forwards;
+}
+
+@keyframes not-enemy-start-game-anim {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+nav.end-game {
+    animation: navbar-end-game-anim 3s linear forwards;
+}
+
+@keyframes navbar-end-game-anim {
+    from {
+        top: -100px;
+    }
+    to {
+        top: 0;
+    }
+}
+
+.not-enemy.end-game {
+    animation: not-enemy-end-game-anim 3s linear forwards;
+}
+
+@keyframes not-enemy-end-game-anim {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+
+.stop-scrolling {
+    height: 100%;
+    overflow-y: hidden;
+}
+
+#home .bullet {
+    position: absolute;
+    font-size: 12px;
+    animation: bullet-moving var(--animTime) linear forwards;
+}
+
+@keyframes bullet-moving {
+    from {
+        transform: translate(var(--x2), var(--y2)) rotate(var(--angle)) translate(var(--x1), var(--y1));
+    }
+    to {
+        transform: translate(var(--x2), var(--y2)) rotate(var(--angle)) translate(var(--x1), var(--y1))
+            translateX(1500px);
+    }
+}
