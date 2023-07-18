@@ -1,4 +1,4 @@
-const CaretRight = '<div class="bullet"><i class="fa-solid fa-caret-right"></i></div>';
+const CaretRight = '<div class="ul-bullet"><i class="fa-solid fa-caret-right"></i></div>';
 
 function ScrollToContent(content) {
     document.getElementById(content).scrollIntoView({ behavior: "smooth" });

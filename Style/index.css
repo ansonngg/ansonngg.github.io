@@ -1,12 +1,14 @@
 :root {
+    --line-height: 1.75;
     --bg-color: #121212;
-    --body-margin: 50px;
+    --body-margin: 40px;
     --max-width: 1200px;
     --table-title-width: 200px;
-    --table-title-margin: 50px;
     --size-factor: 1;
-    --big-margin: calc(50px * var(--size-factor));
-    --small-margin: calc(20px * var(--size-factor));
+    --font-size: calc(16px * var(--size-factor));
+    --big-margin: calc(40px * var(--size-factor));
+    --medium-margin: calc(25px * var(--size-factor));
+    --small-margin: calc(15px * var(--size-factor));
     --big-fa: calc(32px * var(--size-factor));
     --small-fa: calc(24px * var(--size-factor));
 }
@@ -14,8 +16,8 @@
 * {
     margin: 0;
     padding: 0;
-    font-size: calc(16px * var(--size-factor));
-    line-height: 1.5;
+    font-size: var(--font-size);
+    line-height: var(--line-height);
     font-family: "Montserrat", sans-serif;
     color: rgba(255, 255, 255, 0.87);
 }
@@ -51,16 +53,14 @@ section {
 }
 
 p:not(:last-child) {
-    margin-bottom: 10px;
+    margin-bottom: var(--small-margin);
 }
 
 footer {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     width: 100%;
-    height: calc(300px * var(--size-factor));
+    height: 300px;
     background-color: rgba(255, 255, 255, 0.05);
 }
 
@@ -77,11 +77,11 @@ footer {
     overflow: hidden;
     width: 100%;
     height: 900px;
-    max-height: 100vh;
+    max-height: min(100vh, 200vw);
 }
 
 #self-intro {
-    margin-bottom: var(--small-margin);
+    margin-bottom: var(--medium-margin);
 }
 
 #projects-list {
@@ -107,7 +107,7 @@ footer {
 }
 
 .nav-item {
-    margin-left: 50px;
+    margin-left: var(--big-margin);
     text-decoration: none;
     cursor: pointer;
 }
@@ -143,19 +143,19 @@ section .section-title {
 .table-title {
     display: flex;
     justify-content: flex-end;
-    margin-right: var(--table-title-margin);
+    margin-right: var(--big-margin);
     width: var(--table-title-width);
 }
 
 .table-content {
-    width: calc(100% - var(--table-title-margin) - var(--table-title-width));
+    width: calc(100% - var(--big-margin) - var(--table-title-width));
 }
 
-.bullet {
+.ul-bullet {
     display: flex;
     align-items: center;
     margin-right: 10px;
-    height: calc(24px * var(--size-factor));
+    height: calc(var(--font-size) * var(--line-height));
 }
 
 .ul-item {
@@ -163,7 +163,7 @@ section .section-title {
 }
 
 #about .table-row:not(:last-child) {
-    margin-bottom: var(--small-margin);
+    margin-bottom: var(--medium-margin);
 }
 
 #about .table-title i {
@@ -193,7 +193,7 @@ section .section-title {
 }
 
 .project-title {
-    margin-bottom: var(--small-margin);
+    margin-bottom: var(--medium-margin);
 }
 
 .project-content {
@@ -217,35 +217,24 @@ section .section-title {
 }
 
 .project-description {
-    width: calc((100% - var(--table-title-margin)) * 0.4);
+    width: calc((100% - var(--big-margin)) * 0.4);
 }
 
-.slider-button-wrapper {
+.footer-wrapper {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    width: 12px;
-    height: 12px;
-    cursor: pointer;
-}
-
-.slider-button-wrapper:not(:last-child) {
-    margin-right: 20px;
-}
-
-.inactive-slider-button {
-    border-radius: 50%;
-    width: 8px;
-    height: 8px;
-    background-color: rgba(255, 255, 255, 0.87);
+    justify-content: space-between;
+    margin: var(--body-margin) 0;
+    width: calc(100% - 2 * var(--body-margin));
+    max-width: var(--max-width);
+    height: calc(100% - 2 * var(--body-margin));
 }
 
 .footer-content {
     display: flex;
     justify-content: space-between;
-    margin-top: calc(50px * var(--size-factor));
-    width: calc(100% - 2 * var(--body-margin));
-    max-width: var(--max-width);
+    width: 100%;
 }
 
 .contact div {
@@ -263,14 +252,17 @@ section .section-title {
 }
 
 .copyright {
-    margin-bottom: var(--big-margin);
     color: rgba(255, 255, 255, 0.6);
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 700px) {
     :root {
-        --body-margin: 30px;
+        --body-margin: 20px;
         --size-factor: 0.75;
+    }
+
+    footer {
+        height: 200px;
     }
 
     .nav-list {
@@ -297,7 +289,7 @@ section .section-title {
     }
 
     .project-img {
-        margin-bottom: var(--small-margin);
+        margin-bottom: var(--medium-margin);
         margin-right: 0;
         width: 100%;
         height: calc((100vw - 2 * var(--body-margin)) * 0.5625)
