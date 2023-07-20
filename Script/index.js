@@ -213,3 +213,20 @@ fetch("Data/Projects.md")
             }
         }
     });
+
+fetch("Data/MyStory.md")
+    .then(response => response.text())
+    .then(result => {
+        let lines = result.split(/\r?\n/);
+        let selfIntro = document.getElementById("story-content");
+
+        lines.forEach(line => {
+            if (!line) {
+                return;
+            }
+
+            let pElement = document.createElement("p");
+            pElement.innerHTML = line;
+            selfIntro.appendChild(pElement);
+        });
+    });

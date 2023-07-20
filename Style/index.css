@@ -200,6 +200,7 @@ section .section-title {
 
 .project-content {
     display: flex;
+    align-items: flex-start;
     width: 100%;
 }
 
@@ -274,6 +275,29 @@ section .section-title {
     color: rgba(255, 255, 255, 0.6);
 }
 
+@media screen and (max-width: 930px) {
+    .project-content {
+        flex-direction: column;
+    }
+
+    .project-img {
+        margin-bottom: var(--medium-margin);
+        margin-right: 0;
+        width: 100%;
+        height: calc((100vw - 2 * var(--body-margin)) * 0.5625)
+    }
+
+    .project-description {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 825px) {
+    .nav-list {
+        visibility: hidden;
+    }
+}
+
 @media screen and (max-width: 700px) {
     :root {
         --font-size: 14px;
@@ -283,10 +307,6 @@ section .section-title {
 
     footer {
         height: 200px;
-    }
-
-    .nav-list {
-        visibility: hidden;
     }
 
     section .section-title {
@@ -305,21 +325,6 @@ section .section-title {
     }
 
     .table-content {
-        width: 100%;
-    }
-
-    .project-content {
-        flex-direction: column;
-    }
-
-    .project-img {
-        margin-bottom: var(--medium-margin);
-        margin-right: 0;
-        width: 100%;
-        height: calc((100vw - 2 * var(--body-margin)) * 0.5625)
-    }
-
-    .project-description {
         width: 100%;
     }
 
