@@ -1,17 +1,26 @@
 - Tower of Saviors
 - TowerOfSaviorsThumbnail.png
 - Professional Project,Gameplay Programming,Visual Effect,Maintenance,C#,Unity
-- This is the project I worked on when I was working at Madhead.
+- This is the project I worked on when I was working at Madhead. It is an RPG with thousands of puzzles that requires players to use tile-matching to solve while providing thousands of characters where each of them has their own special power to let players strategically make the puzzle easier. It is published on <i>App Store</i> and <i>Google Play</i>.
+- Implemented hundreds of special powers
+- Revamped several parts of code for easier maintenance and wider support for features, e.g. voice over handling, gameplay UIs handling (used to prompt the user for input and apply effects accrodingly, like the one shown in the 2nd image), etc.
+- Implemented several features that were originally not supported in code (i.e. require tremendous change of code to support), e.g. made the timer to be able to check the proportion of the remaining time when the player stop moving the tile and apply effects accordingly (the one shown in the 3rd image)
+- Designed and made several visual effects (the one shown in the 4th image is an example)
 ---
 - Operation: Apocalypse
 - OperationApocalypseThumbnail.png
 - Personal Project,Game Design,Level Design,Code,C#,Unity
-- Lorem ipsum
-- Lorem ipsum
+- This is the final project of a computer science course called "Principles of Computer Game Software", where it was made by a group of 3 people. It is an FPS game with several types of weapons for players to collect and use, as well as 2 types of normal enemies and 1 boss enemy. We do not plan to publish the game, but we are willing to share the game to the people we trust.
+- Found assets on Unity Asset Store and constructed the whole level, including to design the distribution of supply points and enemy crowds
+- Helped teammates find texture and audio resources on the internet (sometimes I needed to edit the sources by using Photoshop or Audacity)
+- Some coding support, e.g. main/pause menu implementation, victory/defeat checking, etc.
 ---
 - Visit the Alien
 - VisitTheAlienThumbnail.png
 - Personal Project,Graphics Programming,C++,OpenGL
-- Lorem ipsum
-- Lorem ipsum
+- This is the final project of a computer science course called "Principles of Computer Graphics", where it was done by me individually. It used GLFW, GLEW and GLM. You may find it from my GitHub repositories named csci3260-asg. There are also other assignments from the same course.
+- Coded everything from scratch, including the entry point (<code>main</code> function), shader reader, obj file reader (we only read obj files for simplicity), the pipeline of object rendering, etc. (except the features provided by OpenGL like clipping and back culling)
+- Applied several techniques in the project, e.g. light rendering (directional light and spotlight shown in the 2nd image), normal mapping (on the earth), object instancing, continuous transformation, etc.
+- Shaders were written in GLSL
+- Got full marks for the project
 ---

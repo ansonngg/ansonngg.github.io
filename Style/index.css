@@ -32,6 +32,7 @@ body {
 
 nav {
     position: fixed;
+    z-index: 1;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -54,6 +55,10 @@ section {
 
 p:not(:last-child) {
     margin-bottom: var(--small-margin);
+}
+
+code {
+    font-family: 'Cascadia Code', sans-serif;
 }
 
 footer {
@@ -164,6 +169,10 @@ section .section-title {
     display: flex;
 }
 
+.small-margin {
+    margin-bottom: var(--small-margin);
+}
+
 #about .table-row:not(:last-child) {
     margin-bottom: var(--medium-margin);
 }
@@ -186,10 +195,6 @@ section .section-title {
     margin-bottom: var(--big-margin);
 }
 
-.experience-title {
-    margin-bottom: var(--small-margin);
-}
-
 .projects-item:not(:last-child) {
     margin-bottom: var(--big-margin);
 }
@@ -205,18 +210,21 @@ section .section-title {
 }
 
 .project-img {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-right: var(--big-margin);
     width: calc((100% - var(--big-margin)) * 0.6);
-    height: calc((min(100vw - 2 * var(--body-margin), 1200px) - var(--big-margin)) * 0.3375);
+    padding-bottom: calc((100% - var(--big-margin)) * 0.3375)
 }
 
 .project-img img {
+    position: absolute;
+    top: 0;
     border-radius: 6px;
-    max-width: 100%;
-    max-height: 100%;
+    width: 100%;
+    height: 100%;
 }
 
 .project-description {
@@ -226,7 +234,6 @@ section .section-title {
 .tag-list {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: var(--small-margin);
 }
 
 .tag {
@@ -284,7 +291,7 @@ section .section-title {
         margin-bottom: var(--medium-margin);
         margin-right: 0;
         width: 100%;
-        height: calc((100vw - 2 * var(--body-margin)) * 0.5625)
+        padding-bottom: 56.25%
     }
 
     .project-description {

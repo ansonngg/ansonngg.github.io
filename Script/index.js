@@ -122,7 +122,7 @@ fetch("Data/Experience.md")
                     tableContent.className = "table-content";
 
                     let experienceTitle = document.createElement("div");
-                    experienceTitle.className = "experience-title";
+                    experienceTitle.className = "small-margin";
                     experienceTitle.innerHTML = `<b>${data[2]}</b> @ ${data[3]}`;
                     tableContent.appendChild(experienceTitle);
 
@@ -143,6 +143,10 @@ fetch("Data/Projects.md")
          *         project-content
          *             project-img
          *             project-description
+         *                 tag-list
+         *                     tag
+         *                     ...
+         *                 description-intro
          *                 description-item
          *                 ...
          *     projects-item
@@ -167,8 +171,12 @@ fetch("Data/Projects.md")
                 container.appendChild(projectsItem);
             } else if (lines[i].substring(0, 2) == "- ") {
                 if (isAnyRowActive) {
-                    let descriptionItem = document.createElement("p");
-                    descriptionItem.innerHTML = lines[i].substring(2);
+                    let descriptionItem = document.createElement("div");
+                    descriptionItem.className = "ul-item";
+                    descriptionItem.innerHTML = CaretRight;
+                    let itemContent = document.createElement("p");
+                    itemContent.innerHTML = lines[i].substring(2);
+                    descriptionItem.appendChild(itemContent);
                     projectDescription.appendChild(descriptionItem);
                 } else {
                     projectsItem = document.createElement("div");
@@ -176,7 +184,7 @@ fetch("Data/Projects.md")
                     isAnyRowActive = true;
                     let data = [lines[i].substring(2)];
 
-                    while (data.length < 3 && ++i < lines.length) {
+                    while (data.length < 4 && ++i < lines.length) {
                         if (lines[i].substring(0, 2) == "- ") {
                             data.push(lines[i].substring(2));
                         }
@@ -199,7 +207,7 @@ fetch("Data/Projects.md")
                     projectDescription.className = "project-description";
 
                     let tagList = document.createElement("div");
-                    tagList.className = "tag-list";
+                    tagList.className = "tag-list small-margin";
 
                     data[2].split(",").forEach(tagName => {
                         let tag = document.createElement("div");
@@ -209,6 +217,11 @@ fetch("Data/Projects.md")
                     });
 
                     projectDescription.appendChild(tagList);
+
+                    let descriptionIntro = document.createElement("div");
+                    descriptionIntro.className = "small-margin";
+                    descriptionIntro.innerHTML = data[3];
+                    projectDescription.appendChild(descriptionIntro);
                 }
             }
         }
