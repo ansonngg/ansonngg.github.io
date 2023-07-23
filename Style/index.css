@@ -36,7 +36,6 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
     height: calc(80px * var(--size-factor));
     background-color: var(--bg-color);
 }
@@ -64,7 +63,6 @@ code {
 footer {
     display: flex;
     justify-content: center;
-    width: 100%;
     height: 300px;
     background-color: rgba(255, 255, 255, 0.05);
 }
@@ -80,7 +78,6 @@ footer {
     align-items: flex-start;
     justify-content: center;
     overflow: hidden;
-    width: 100%;
     height: 900px;
     max-height: min(100vh, 200vw);
 }
@@ -89,13 +86,7 @@ footer {
     margin-bottom: var(--medium-margin);
 }
 
-#projects-list {
-    width: 100%;
-}
-
-#slider-button-list {
-    display: flex;
-    justify-content: center;
+.full-width {
     width: 100%;
 }
 
@@ -135,10 +126,6 @@ footer {
 section .section-title {
     margin-bottom: var(--big-margin);
     font-size: 32px;
-}
-
-.section-content {
-    width: 100%;
 }
 
 .table-row {
@@ -205,30 +192,15 @@ section .section-title {
 
 .project-content {
     display: flex;
+    flex-direction: column;
     align-items: flex-start;
-    width: 100%;
 }
 
-.project-img {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: var(--big-margin);
-    width: calc((100% - var(--big-margin)) * 0.6);
-    padding-bottom: calc((100% - var(--big-margin)) * 0.3375)
-}
-
-.project-img img {
-    position: absolute;
-    top: 0;
+.project-content img {
+    margin-bottom: var(--medium-margin);
     border-radius: 6px;
-    width: 100%;
-    height: 100%;
-}
-
-.project-description {
-    width: calc((100% - var(--big-margin)) * 0.4);
+    max-width: 100%;
+    max-height: 480px;
 }
 
 .tag-list {
@@ -260,7 +232,6 @@ section .section-title {
 .footer-content {
     display: flex;
     justify-content: space-between;
-    width: 100%;
 }
 
 .contact div {
@@ -280,23 +251,6 @@ section .section-title {
 
 .copyright {
     color: rgba(255, 255, 255, 0.6);
-}
-
-@media screen and (max-width: 930px) {
-    .project-content {
-        flex-direction: column;
-    }
-
-    .project-img {
-        margin-bottom: var(--medium-margin);
-        margin-right: 0;
-        width: 100%;
-        padding-bottom: 56.25%
-    }
-
-    .project-description {
-        width: 100%;
-    }
 }
 
 @media screen and (max-width: 825px) {

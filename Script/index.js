@@ -196,15 +196,11 @@ fetch("Data/Projects.md")
                     projectsItem.appendChild(projectTitle);
 
                     projectContent = document.createElement("div");
-                    projectContent.className = "project-content";
-
-                    let projectImg = document.createElement("div");
-                    projectImg.className = "project-img";
-                    projectImg.innerHTML = `<img src="Asset/Thumbnail/${data[1]}" alt="Thumbnail of ${data[0]}">`;
-                    projectContent.appendChild(projectImg);
+                    projectContent.className = "project-content full-width";
+                    projectContent.innerHTML = `<img src="Asset/Thumbnail/${data[1]}" alt="Thumbnail of ${data[0]}">`;
 
                     projectDescription = document.createElement("div");
-                    projectDescription.className = "project-description";
+                    projectDescription.className = "full-width";
 
                     let tagList = document.createElement("div");
                     tagList.className = "tag-list small-margin";
