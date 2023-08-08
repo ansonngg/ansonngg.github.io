@@ -3,18 +3,17 @@
 - Programmer
 - Madhead
 - Maintained and brought new features into the game "Tower of Saviors" using Unity and C#
-- Designed visual effects by using resources from Art Team, writing shaders and utilizing particle system
-- Implemented the logic and designed the UI for gameplay to make new contents live in the game
-- Revamped legacy code into code that fits the current architecture for smoother development
+- Collaborated with game designers and artists tightly to ensure the quality of the product
+- Monitored players' feedback on social media for prompt improvements such as bugfixes and ability tuning
+- Provided code architecture suggestions to senior team members and implemented impactful revamps, resulting in easier development for other team members
 ---
 - Aug 2021
 - Jun 2022
 - Assistant Engineer
 - Hong Kong Centre for Logistics Robotics
-- Assisted the Project Manager to develop a computationally heavy software by using C++ and multithreading
-- Designed and implemented the GUI of the software and integrated them with backend modules
-- Implemented and optimized geometric algorithms given by researchers and modified them when necessary
-- Applied deep learning to solve geometric problems
+- Developed a computationally heavy software by using C++ and various geometry libraries such as Open3D
+- Designed and implemented the GUI of the software using Qt, and integrated them with backend modules
+- Implemented and optimized geometric algorithms provided by researchers, employing techniques such as multithreading and optimizing time complexity
 ---
 - Sep 2017
 - Jul 2021
