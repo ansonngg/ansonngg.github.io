@@ -3,9 +3,9 @@
 - Programmer
 - Madhead
 - Maintained and brought new features into the game "Tower of Saviors" using Unity and C#
-- Collaborated with game designers and artists tightly to ensure the quality of the product
-- Monitored players' feedback on social media for prompt improvements such as bugfixes and ability tuning
-- Provided code architecture suggestions to senior team members and implemented impactful revamps, resulting in easier development for other team members
+- Collaborated closely with game designers and artists to deliver new, high-quality game levels/art assets
+- Coordinated closely with QA testers to ensure the quality through the implementation of unit tests, and employing effective debugging and optimization strategies such as identifying and resolving overdraw
+- Provided code architecture suggestions to senior developers and implemented impactful revamps, resulting in easier development for other developers
 ---
 - Aug 2021
 - Jun 2022

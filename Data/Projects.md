@@ -2,10 +2,10 @@
 - TowerOfSaviorsThumbnail.png
 - Professional Project,Gameplay Programming,Visual Effect,Maintenance,C#,Unity
 - This is the project I worked on when I was working at Madhead. It is an RPG with thousands of puzzles that requires players to use tile-matching to solve while providing thousands of characters where each of them has their own special power to let players strategically make the puzzle easier. It is published on <i>App Store</i> and <i>Google Play</i>.
-- Implemented hundreds of special powers
+- Implemented hundreds of special powers followed by unit tests
 - Revamped several parts of code to facilitate easier development, maintenance, and broader support for features, e.g. voice over handling, gameplay UIs handling (used to prompt the user for input and apply effects accrodingly, like the one shown in the 2nd image), etc.
 - Implemented several features that were originally not supported in code (i.e. require tremendous change of code to support), e.g. made the timer to be able to check the proportion of the remaining time when the player stop moving the tile and apply effects accordingly (the one shown in the 3rd image)
-- Designed and made several visual effects (e.g. the one shown in the 4th image) by using the resources provided by artists, writing shaders and utilizing particle system
+- Designed and made several visual effects (e.g. the one shown in the 4th image) by using the resources provided by artists, particle system and writing shaders
 ---
 - Operation: Apocalypse
 - OperationApocalypseThumbnail.png
