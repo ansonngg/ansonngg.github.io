@@ -59,7 +59,7 @@ function StartGame(event) {
 }
 
 function InitGame(event) {
-  window.location.href = '#home';
+  document.getElementById('home').scrollIntoView({ behavior: 'smooth' });
   document.body.classList.add('stop-scrolling');
 
   navbar.classList.add('start-game');

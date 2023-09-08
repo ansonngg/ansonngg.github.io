@@ -4,16 +4,16 @@
 - Madhead
 - Maintained and brought new features into the game "Tower of Saviors" using Unity and C#
 - Collaborated closely with game designers and artists to deliver new, high-quality game levels/art assets
-- Coordinated closely with QA testers to ensure the quality through the implementation of unit tests, and employing effective debugging and optimization strategies such as identifying and resolving overdraw
-- Provided code architecture suggestions to senior developers and implemented impactful revamps, resulting in easier development for other developers
+- Collaborated closely with QA testers to enhance quality assurance by implementing unit tests and employing effective debugging techniques, leading to a notable 35% reduction in weekly bug reports
+- Provided code architecture suggestions to senior developers and implemented impactful revamps, resulting in expedited development of new features
 ---
 - Aug 2021
 - Jun 2022
 - Assistant Engineer
 - Hong Kong Centre for Logistics Robotics
-- Developed a computationally heavy software by using C++ and various geometry libraries such as Open3D
+- Developed a computationally heavy software by using C++ and various libraries such as Open3D and OpenCV
 - Designed and implemented the GUI of the software using Qt, and integrated them with backend modules
-- Implemented and optimized geometric algorithms provided by researchers, employing techniques such as multithreading and optimizing time complexity
+- Implemented and optimized geometric algorithms provided by researchers, employing techniques such as multithreading and optimizing time complexity, resulting in a performance improvement of 500%
 ---
 - Sep 2017
 - Jul 2021

@@ -6,14 +6,15 @@
 - Python
 ---
 - game-or-graphics
+- DirectX 12 & HLSL
 - OpenGL & GLSL
 - Unity
 - Unreal Engine
 ---
 - tools
 - Figma
+- Photoshop
 - Git
 - Jenkins
 - Jira
-- Photoshop
 ---
