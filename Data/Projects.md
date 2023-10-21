@@ -1,26 +1,26 @@
 - Tower of Saviors
 - TowerOfSaviorsThumbnail.png
 - Professional Project,Gameplay Programming,Visual Effect,Maintenance,C#,Unity
-- This is the project I worked on when I was working at Madhead. It is an RPG with thousands of puzzles that requires players to use tile-matching to solve while providing thousands of characters where each of them has their own special power to let players strategically make the puzzle easier. It is published on <i>App Store</i> and <i>Google Play</i>.
+- This is the project I worked on while at Madhead. It is an RPG with thousands of puzzles that require players to use tile-matching to solve, while providing thousands of characters, each with their own special power to strategically aid players in solving the puzzles. The game has been published on <i>App Store</i> and <i>Google Play</i>.
 - Implemented hundreds of special powers followed by unit tests
-- Revamped several parts of code to facilitate easier development, maintenance, and broader support for features, e.g. voice over handling, gameplay UIs handling (used to prompt the user for input and apply effects accrodingly, like the one shown in the 2nd image), etc.
-- Implemented several features that were originally not supported in code (i.e. require tremendous change of code to support), e.g. made the timer to be able to check the proportion of the remaining time when the player stop moving the tile and apply effects accordingly (the one shown in the 3rd image)
-- Designed and made several visual effects (e.g. the one shown in the 4th image) by using the resources provided by artists, particle system and writing shaders
+- Revamped several sections of the codebase to facilitate easier development, maintenance, and broader support for features, such as voice over handler and gameplay UIs handler (which prompt users for input and apply effects accordingly, as seen in the second image)
+- Implemented several features that were initially unsupported in the code, requiring significant modifications, such as allowing the timer to check the remaining time proportion when the player stops moving the tile and applying effects accordingly (as shown in the third image)
+- Designed and created various visual effects (e.g., the one depicted in the fourth image) by utilizing resources provided by artists, utilizing particle systems, and writing shaders
 ---
 - Operation: Apocalypse
 - OperationApocalypseThumbnail.png
-- Personal Project,Game Design,Level Design,Code,C#,Unity
-- This is the final project of a computer science course called "Principles of Computer Game Software", where it was made by a group of 3 people. It is an FPS game with several types of weapons for players to collect and use, as well as 2 types of normal enemies and 1 boss enemy. We do not plan to publish the game, but we are willing to share the game to the people we trust.
-- Found assets on Unity Asset Store and constructed the whole level, including to design the distribution of supply points and enemy crowds
-- Helped teammates find texture and audio resources on the internet (sometimes I needed to edit the sources by using Photoshop or Audacity)
-- Some coding support, e.g. main/pause menu implementation, victory/defeat checking, etc.
+- School Project,Game Design,Level Design,Code,C#,Unity
+- This is the final project of a computer science course called "Principles of Computer Game Software", created by a group of three individuals. It is an FPS game featuring various weapons for players to collect and use, along with two types of regular enemies and one boss enemy. While we do not have plans to publish the game, we are open to sharing it with trusted individuals.
+- Discovered assets on the Unity Asset Store and constructed the entire level, including designing the distribution of supply points and enemy groups
+- Assisted teammates in locating texture and audio resources on the internet, occasionally editing them using applications like Photoshop or Audacity
+- Provided coding support, e.g. main/pause menu implementation, victory/defeat checking, etc.
 ---
 - Visit the Alien
 - VisitTheAlienThumbnail.png
-- Personal Project,Graphics Programming,C++,OpenGL
-- This is the final project of a computer science course called "Principles of Computer Graphics", where it was done by me individually. It used GLFW, GLEW and GLM. You may find it from my GitHub repositories named csci3260-asg. There are also other assignments from the same course.
-- Coded everything from scratch, including the entry point (<code>main</code> function), shader reader, obj file reader (we only read obj files for simplicity), the pipeline of object rendering, etc. (except the features provided by OpenGL like clipping and back culling)
-- Applied several techniques in the project, e.g. light rendering (directional light and spotlight shown in the 2nd image), normal mapping (on the earth), object instancing, continuous transformation, etc.
+- School Project,Graphics Programming,C++,OpenGL
+- This is my individual final project for the computer science course "Principles of Computer Graphics". It utilizes GLFW, GLEW, and GLM libraries, and you can find it in my GitHub repository named csci3260-asg. There are also other assignments from the same course available.
+- Coded everything from scratch, including the entry point (the <code>main</code> function), shader reader, obj file reader (limited to obj files for simplicity), the object rendering pipeline, and more (excluding features provided by OpenGL such as clipping and back culling)
+- Implemented several techniques in the project, including light rendering (showcasing directional light and spotlight in the second image), normal mapping (applied to the Earth model), object instancing, continuous transformation, and more
 - Shaders were written in GLSL
-- Got full marks for the project
+- Achieved full marks for the project
 ---

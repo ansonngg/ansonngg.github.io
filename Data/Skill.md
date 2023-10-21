@@ -12,9 +12,9 @@
 - Unreal Engine
 ---
 - tools
-- Figma
-- Photoshop
 - Git
 - Jenkins
 - Jira
+- Figma
+- Photoshop
 ---
