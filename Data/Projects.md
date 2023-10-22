@@ -10,7 +10,7 @@
 - Operation: Apocalypse
 - OperationApocalypseThumbnail.png
 - School Project,Game Design,Level Design,Code,C#,Unity
-- This is the final project of a computer science course called "Principles of Computer Game Software", created by a group of three individuals. It is an FPS game featuring various weapons for players to collect and use, along with two types of regular enemies and one boss enemy. While we do not have plans to publish the game, we are open to sharing it with trusted individuals.
+- This is the final project of a computer science course called "Principles of Computer Game Software," created by a group of three individuals. It is an FPS game featuring various weapons for players to collect and use, along with two types of regular enemies and one boss enemy. While we do not have plans to publish the game, we are open to sharing it with trusted individuals.
 - Discovered assets on the Unity Asset Store and constructed the entire level, including designing the distribution of supply points and enemy groups
 - Assisted teammates in locating texture and audio resources on the internet, occasionally editing them using applications like Photoshop or Audacity
 - Provided coding support, e.g. main/pause menu implementation, victory/defeat checking, etc.
@@ -18,7 +18,7 @@
 - Visit the Alien
 - VisitTheAlienThumbnail.png
 - School Project,Graphics Programming,C++,OpenGL
-- This is my individual final project for the computer science course "Principles of Computer Graphics". It utilizes GLFW, GLEW, and GLM libraries, and you can find it in my GitHub repository named csci3260-asg. There are also other assignments from the same course available.
+- This is my individual final project for the computer science course "Principles of Computer Graphics." It utilizes GLFW, GLEW, and GLM libraries, and you can find it in my GitHub repository named csci3260-asg. There are also other assignments from the same course available.
 - Coded everything from scratch, including the entry point (the <code>main</code> function), shader reader, obj file reader (limited to obj files for simplicity), the object rendering pipeline, and more (excluding features provided by OpenGL such as clipping and back culling)
 - Implemented several techniques in the project, including light rendering (showcasing directional light and spotlight in the second image), normal mapping (applied to the Earth model), object instancing, continuous transformation, and more
 - Shaders were written in GLSL

@@ -214,6 +214,7 @@ section .section-title {
 }
 
 .project-content img {
+    margin: 0 auto;
     margin-bottom: var(--medium-margin);
     border-radius: 6px;
     max-width: 100%;

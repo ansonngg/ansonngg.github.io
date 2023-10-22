@@ -84,3 +84,9 @@ nav.end-game {
             translateX(1500px);
     }
 }
+
+@media screen and (max-width: 1279px) {
+    #home .section-title.not-start-game {
+        cursor: auto;
+    }
+}
