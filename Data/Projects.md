@@ -19,7 +19,7 @@
 - VisitTheAlienThumbnail.png
 - School Project,Graphics Programming,C++,OpenGL
 - This is my individual final project for the computer science course "Principles of Computer Graphics." It utilizes GLFW, GLEW, and GLM libraries, and you can find it in my GitHub repository named csci3260-asg. There are also other assignments from the same course available.
-- Coded everything from scratch, including the entry point (the <code>main</code> function), shader reader, obj file reader (limited to obj files for simplicity), the object rendering pipeline, and more (excluding features provided by OpenGL such as clipping and back culling)
+- Coded everything from scratch, including the entry point (the <code>main</code> function), shader reader, obj file reader (limited to obj files for simplicity), and more (excluding features provided by OpenGL such as clipping and back culling)
 - Implemented several techniques in the project, including light rendering (showcasing directional light and spotlight in the second image), normal mapping (applied to the Earth model), object instancing, continuous transformation, and more
 - Shaders were written in GLSL
 - Achieved full marks for the project
