@@ -63,7 +63,6 @@ code {
 footer {
     display: flex;
     justify-content: center;
-    height: 300px;
     background-color: rgba(255, 255, 255, 0.05);
 }
 
@@ -240,16 +239,16 @@ section .section-title {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    margin: var(--body-margin) 0;
+    margin: var(--big-margin) 0;
     width: calc(100% - 2 * var(--body-margin));
     max-width: var(--max-width);
-    height: calc(100% - 2 * var(--body-margin));
+    height: calc(100% - 2 * var(--big-margin));
 }
 
 .footer-content {
     display: flex;
     justify-content: space-between;
+    margin-bottom: calc(2 * var(--big-margin));
 }
 
 .contact {
@@ -283,10 +282,6 @@ section .section-title {
         --font-size: 14px;
         --body-margin: 20px;
         --size-factor: 0.8;
-    }
-
-    footer {
-        height: 200px;
     }
 
     section .section-title {
