@@ -1,0 +1,6 @@
+@use '@/app/globals';
+
+.navbar-item {
+    margin-left: globals.$big-margin;
+    cursor: pointer;
+}

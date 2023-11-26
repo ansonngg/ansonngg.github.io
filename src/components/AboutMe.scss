@@ -1,0 +1,19 @@
+@use '@/app/globals';
+
+.skill-table {
+    margin-top: globals.$medium-margin;
+
+    .table-item {
+        &:not(:last-child) {
+            margin-bottom: globals.$medium-margin;
+        }
+
+        .table-item-content {
+            display: flex;
+    
+            .image-headed-text {
+                margin-right: globals.$medium-margin;
+            }
+        }
+    }
+}

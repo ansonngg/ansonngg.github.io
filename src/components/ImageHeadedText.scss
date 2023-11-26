@@ -1,0 +1,11 @@
+@use '@/app/globals';
+
+.image-headed-text {
+    display: flex;
+
+    .image-wrapper {
+        display: flex;
+        align-items: center;
+        height: #{globals.$font-size * globals.$line-height};
+    }
+}

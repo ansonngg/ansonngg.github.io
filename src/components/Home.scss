@@ -1,0 +1,29 @@
+@use '@/app/globals';
+
+#home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+    height: 100vh;
+    max-height: 900px;
+}
+
+.home-intro-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 64px;
+    width: 600px;
+}
+
+.home-intro-wrapper p {
+    margin: globals.$small-margin 0;
+}
+
+#pfp {
+    border-radius: 10px;
+    height: 360px;
+    image-rendering: pixelated;
+}
