@@ -15,5 +15,8 @@ section {
 
 .section-title {
     margin-bottom: globals.$big-margin;
-    font-size: 18px;
+
+    b {
+        font-size: 18px;
+    }
 }

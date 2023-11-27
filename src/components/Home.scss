@@ -14,12 +14,20 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    gap: globals.$small-margin;
     margin-right: 64px;
     width: 600px;
 }
 
-.home-intro-wrapper p {
-    margin: globals.$small-margin 0;
+.download-button {
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 10px 15px;
+    text-decoration: none;
+
+    &:hover {
+        background-color: #f2f2f2;
+    }
 }
 
 #pfp {

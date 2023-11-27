@@ -11,5 +11,5 @@ const mdxMap: Record<string, ComponentType<MDXProps>> = {
 
 export default function MDXLoader(props: { file: string }) {
     const MDXComponent = mdxMap[props.file];
-    return <MDXComponent />;
+    return <div><MDXComponent /></div>;
 }

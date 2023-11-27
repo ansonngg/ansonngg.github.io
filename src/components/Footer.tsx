@@ -1,5 +1,5 @@
-import ImageButton from './ImageButton';
-import ImageHeadedText from './ImageHeadedText';
+import IconButton from './IconButton';
+import IconHeadedText from './IconHeadedText';
 import './Footer.scss';
 
 export default function Footer() {
@@ -8,24 +8,16 @@ export default function Footer() {
             <div className="footer-wrapper">
                 <div className="social-media">
                     <div className="contact-list">
-                        <ImageHeadedText image="EnvelopeIcon.svg" margin="10px">
+                        <IconHeadedText name="mail">
                             ngkawai9886@gmail.com
-                        </ImageHeadedText>
+                        </IconHeadedText>
                     </div>
-                    <div className="image-button-list">
-                        <ImageButton
-                            image="GithubIcon.svg"
-                            link="https://github.com/ansonngg"
-                        />
-                        <ImageButton
-                            image="LinkedinIcon.svg"
-                            link="https://www.linkedin.com/in/anson-ng-11145b206/"
-                        />
+                    <div className="icon-button-list">
+                        <IconButton name="github" link="https://github.com/ansonngg" />
+                        <IconButton name="linkedin" link="https://www.linkedin.com/in/anson-ng-11145b206/" />
                     </div>
                 </div>
-                <p className="secondary-text">
-                    &copy; 2023 Anson Ng. All rights reserved.
-                </p>
+                <p className="secondary-text">&copy; 2023 Anson Ng. All rights reserved.</p>
             </div>
         </footer>
     );

@@ -1,11 +1,12 @@
 @use '@/app/globals';
 
-.image-headed-text {
+.ul-item {
     display: flex;
 
-    .image-wrapper {
+    .icon-wrapper {
         display: flex;
         align-items: center;
+        margin-right: 5px;
         height: #{globals.$font-size * globals.$line-height};
     }
 }

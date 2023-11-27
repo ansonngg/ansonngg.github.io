@@ -21,6 +21,7 @@ nav {
 
 .navbar-item-list {
     display: flex;
+    gap: globals.$big-margin;
 
     @media screen and (max-width: globals.$tablet-width) {
         display: none;

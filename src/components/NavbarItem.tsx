@@ -3,17 +3,14 @@
 import React from 'react';
 import './NavbarItem.scss';
 
-export default function NavbarItem(props: {
-    target: string;
-    children: React.ReactNode;
-}) {
-    function OnClick(target: string) {
-        document.getElementById(target)?.scrollIntoView({ behavior: 'smooth' });
-    }
+function OnClick(target: string) {
+    document.getElementById(target)?.scrollIntoView({ behavior: 'smooth' });
+}
 
+export default function NavbarItem(props: { target: string; children: React.ReactNode }) {
     return (
         <div className="navbar-item" onClick={() => OnClick(props.target)}>
-            <p>{props.children}</p>
+            <b>{props.children}</b>
         </div>
     );
 }

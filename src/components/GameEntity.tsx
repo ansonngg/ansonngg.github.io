@@ -5,5 +5,5 @@ export default function GameEntity(props: {
     entityId: number;
     children: React.ReactNode;
 }) {
-    return <div className="gameEntity">{props.children}</div>;
+    return <div className="game-entity">{props.children}</div>;
 }

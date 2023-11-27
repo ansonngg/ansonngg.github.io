@@ -1,7 +1,9 @@
-import ImageHeadedText from './ImageHeadedText';
+import { IconName } from './Icon';
+import IconHeadedText from './IconHeadedText';
 import MDXLoader from './MDXLoader';
 import Section from './Section';
 import TableItem from './TableItem';
+import ULItem from './ULItem';
 import skill from '@/data/Skill.json';
 import './AboutMe.scss';
 
@@ -11,26 +13,11 @@ skill.forEach((value, skillIndex) => {
     const skillItemList: JSX.Element[] = [];
 
     value.items.forEach((item, itemIndex) => {
-        skillItemList.push(
-            <ImageHeadedText
-                key={itemIndex}
-                image="CaretRightIcon.svg"
-                margin="5px"
-            >
-                {item}
-            </ImageHeadedText>
-        );
+        skillItemList.push(<ULItem key={itemIndex}>{item}</ULItem>);
     });
 
     skillList.push(
-        <TableItem
-            key={skillIndex}
-            title={
-                <ImageHeadedText image={value.icon} margin="10px">
-                    {value.name}
-                </ImageHeadedText>
-            }
-        >
+        <TableItem key={skillIndex} title={<IconHeadedText name={value.icon as IconName}>{value.name}</IconHeadedText>}>
             {skillItemList}
         </TableItem>
     );

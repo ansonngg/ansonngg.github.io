@@ -1,12 +1,12 @@
 [
     {
         "name": "Programming",
-        "icon": "CodeIcon.svg",
+        "icon": "code-2",
         "items": ["C/C++", "C#", "Java", "JavaScript", "Python"]
     },
     {
         "name": "Game/Graphics",
-        "icon": "ExplosionIcon.svg",
+        "icon": "gamepad-2",
         "items": [
             "DirectX 12 & HLSL",
             "OpenGL & GLSL",
@@ -16,7 +16,7 @@
     },
     {
         "name": "Tools",
-        "icon": "WrenchIcon.svg",
+        "icon": "wrench",
         "items": ["Git", "Jenkins", "Jira", "Figma", "Photoshop"]
     }
 ]

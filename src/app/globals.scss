@@ -45,15 +45,12 @@ p {
     box-shadow: 0 0 10px rgba(#000000, 0.1);
 }
 
-.image-button-list {
+.icon-button-list {
     display: flex;
     align-items: center;
-
-    .image-button:not(:last-child) {
-        margin-right: $small-margin;
-    }
+    gap: $small-margin;
 }
 
 .secondary-text {
-    color: #666666;
+    color: #9e9e9e;
 }

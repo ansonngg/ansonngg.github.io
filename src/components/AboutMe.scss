@@ -10,10 +10,7 @@
 
         .table-item-content {
             display: flex;
-    
-            .image-headed-text {
-                margin-right: globals.$medium-margin;
-            }
+            gap: globals.$medium-margin;
         }
     }
 }
