@@ -5,11 +5,11 @@ import './Projects.scss';
 
 const projectList: JSX.Element[] = [];
 
-projects.forEach((item, itemIndex) => {
+projects.forEach((project, projectIndex) => {
     const tagList: JSX.Element[] = [];
     const buttonList: JSX.Element[] = [];
 
-    item.tags.forEach((tag, tagIndex) => {
+    project.tags.forEach((tag, tagIndex) => {
         tagList.push(
             <div key={tagIndex} className="floating rounded-corner">
                 {tag}
@@ -17,19 +17,20 @@ projects.forEach((item, itemIndex) => {
         );
     });
 
-    item.buttons.forEach((button, buttonIndex) => {
-        buttonList.push(
-            <IconButton key={buttonIndex} name={button.icon} link={button.link} />
-        )
+    project.buttons.forEach((button, buttonIndex) => {
+        buttonList.push(<IconButton key={buttonIndex} icon={button.icon} link={button.link} />);
     });
 
     projectList.push(
-        <div key={itemIndex} className="floating rounded-corner card-padding">
-            <img className="rounded-corner" src={item.image} alt={item.image} />
+        <div key={projectIndex} className="floating rounded-corner card-padding">
+            <img className="rounded-corner" src={project.image} alt={project.image} />
             <div className="project-content">
-                <b>{item.name}</b>
+                <b>{project.name}</b>
                 <div className="tag-list">{tagList}</div>
                 <div className="icon-button-list">{buttonList}</div>
+                <div className="download-button rounded-corner">
+                    <b>Read More</b>
+                </div>
             </div>
         </div>
     );

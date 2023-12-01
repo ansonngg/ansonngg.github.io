@@ -1,11 +1,13 @@
+'use client';
+
 import React from 'react';
-import Icon from './Icon';
+import { Icon } from '@iconify/react';
 import './IconHeadedText.scss';
 
-export default function IconHeadedText(props: { name: string; children: React.ReactNode }) {
+export default function IconHeadedText(props: { icon: string; children: React.ReactNode }) {
     return (
         <div className="icon-headed-text">
-            <Icon name={props.name} size={28} />
+            <Icon icon={props.icon} height="28" />
             <p>{props.children}</p>
         </div>
     );

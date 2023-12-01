@@ -1,4 +1,9 @@
+@use '@/app/globals';
+
 .game-entity {
-    display: inline-block;
-    font-size: 60px;
+    font-size: min(5vw, 60px);
+
+    @media screen and (max-width: globals.$mobile-width) {
+        font-size: 7.9vw;
+    }
 }

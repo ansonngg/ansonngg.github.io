@@ -5,11 +5,11 @@
         "tags": ["Professional Project", "Gameplay Programming", "Visual Effect", "Maintenance", "C#", "Unity"],
         "buttons": [
             {
-                "icon": "AppStoreIcon",
+                "icon": "mingcute:appstore-line",
                 "link": "https://apps.apple.com/ca/app/%E7%A5%9E%E9%AD%94%E4%B9%8B%E5%A1%94/id583798880"
             },
             {
-                "icon": "GooglePlayIcon",
+                "icon": "mingcute:google-play-line",
                 "link": "https://play.google.com/store/apps/details?id=com.madhead.tos.zh"
             }
         ]
@@ -26,7 +26,7 @@
         "tags": ["School Project", "Graphics Programming", "C++", "OpenGL"],
         "buttons": [
             {
-                "icon": "github",
+                "icon": "mingcute:github-line",
                 "link": "https://github.com/ansonngg/csci3260-asg"
             }
         ]

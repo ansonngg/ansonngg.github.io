@@ -1,3 +1,4 @@
+$laptop-width: 1024px;
 $tablet-width: 768px;
 $mobile-width: 480px;
 
@@ -7,17 +8,17 @@ $big-margin: 40px;
 $medium-margin: 25px;
 $small-margin: 15px;
 
-@mixin set-margin($vertical-margin, $horizontal-margin) {
-    margin: $vertical-margin $horizontal-margin;
-    width: calc(100% - 2 * #{$horizontal-margin});
+:root {
+    --body-margin: 50px;
+
+    @media screen and (max-width: $mobile-width) {
+        --body-margin: 20px;
+    }
 }
 
 @mixin set-body-margin($vertical-margin) {
-    @include set-margin($vertical-margin, 50px);
-
-    @media screen and (max-width: $mobile-width) {
-        @include set-margin($vertical-margin, 20px);
-    }
+    margin: $vertical-margin var(--body-margin);
+    width: calc(100% - 2 * var(--body-margin));
 }
 
 * {
@@ -54,8 +55,23 @@ p {
     border-radius: 10px;
 }
 
+.download-button {
+    border: 1px solid #e0e0e0;
+    padding: 15px 25px;
+    cursor: pointer;
+    text-decoration: none;
+
+    &:hover {
+        background-color: #f2f2f2;
+    }
+}
+
 .card-padding {
     padding: 20px 25px;
+
+    @media screen and (max-width: $mobile-width) {
+        padding: 20px;
+    }
 }
 
 .icon-button-list {

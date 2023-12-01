@@ -1,4 +1,6 @@
-import Icon from './Icon';
+'use client';
+
+import IconButton from './IconButton';
 import NavbarItem from './NavbarItem';
 import './Navbar.scss';
 
@@ -15,7 +17,7 @@ export default function Navbar() {
                     <NavbarItem target="my-story-anchor">My Story</NavbarItem>
                 </div>
                 <div className="navbar-menu">
-                    <Icon name="menu" size={32} />
+                    <IconButton icon="mingcute:menu-line" size={32} />
                 </div>
             </div>
         </nav>

@@ -8,13 +8,14 @@ export default function Footer() {
             <div className="footer-wrapper">
                 <div className="social-media">
                     <div className="contact-list">
-                        <IconHeadedText name="mail">
-                            ngkawai9886@gmail.com
-                        </IconHeadedText>
+                        <IconHeadedText icon="mingcute:mail-line">ngkawai9886@gmail.com</IconHeadedText>
                     </div>
                     <div className="icon-button-list">
-                        <IconButton name="github" link="https://github.com/ansonngg" />
-                        <IconButton name="linkedin" link="https://www.linkedin.com/in/anson-ng-11145b206/" />
+                        <IconButton icon="mingcute:github-line" link="https://github.com/ansonngg" />
+                        <IconButton
+                            icon="mingcute:linkedin-line"
+                            link="https://www.linkedin.com/in/anson-ng-11145b206/"
+                        />
                     </div>
                 </div>
                 <p className="secondary-text">&copy; 2023 Anson Ng. All rights reserved.</p>

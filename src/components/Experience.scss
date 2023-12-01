@@ -6,4 +6,12 @@
     &:not(:last-child) {
         margin-bottom: globals.$big-margin;
     }
+
+    @media screen and (max-width: globals.$tablet-width) {
+        padding-left: 25px;
+    }
+
+    @media screen and (max-width: globals.$mobile-width) {
+        padding-left: 20px;
+    }
 }

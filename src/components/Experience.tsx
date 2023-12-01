@@ -1,18 +1,22 @@
 import MDXLoader from './MDXLoader';
 import Section from './Section';
 import TableItem from './TableItem';
-import experience from '@/data/Experience.json';
+import experiences from '@/data/Experiences.json';
 import './Experience.scss';
 
 const experienceList: JSX.Element[] = [];
 
-experience.forEach((item, itemIndex) => {
+experiences.forEach((experience, experienceIndex) => {
     experienceList.push(
-        <TableItem key={itemIndex} title={<p>{item.period}</p>} className="floating rounded-corner card-padding">
+        <TableItem
+            key={experienceIndex}
+            title={<p>{experience.period}</p>}
+            className="floating rounded-corner card-padding"
+        >
             <p>
-                <b>{item.title}</b> @ {item.organization}
+                <b>{experience.title}</b> @ {experience.organization}
             </p>
-            <MDXLoader file={item.description} />
+            <MDXLoader file={experience.description} />
         </TableItem>
     );
 });

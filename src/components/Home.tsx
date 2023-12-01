@@ -12,13 +12,17 @@ export default function Home() {
                     <GameEntity entityId={0}>Hi, I'm Anson Ng</GameEntity>
                     <GameEntity entityId={1}>A Game Developer</GameEntity>
                 </div>
-                <MDXLoader file="HomeIntro" />
+                <div>
+                    <MDXLoader file="HomeIntro" />
+                </div>
                 <div className="icon-button-list">
-                    <IconButton name="github" link="https://github.com/ansonngg" />
-                    <IconButton name="linkedin" link="https://www.linkedin.com/in/anson-ng-11145b206/" />
+                    <IconButton icon="mingcute:github-line" link="https://github.com/ansonngg" />
+                    <IconButton icon="mingcute:linkedin-line" link="https://www.linkedin.com/in/anson-ng-11145b206/" />
                 </div>
                 <a className="download-button rounded-corner" href="ANSON_NG_Resume.docx" download="">
-                    <IconHeadedText name="download"><b>Download Resume</b></IconHeadedText>
+                    <IconHeadedText icon="mingcute:download-2-line">
+                        <b>Download Resume</b>
+                    </IconHeadedText>
                 </a>
             </div>
             <img className="floating rounded-corner" id="pfp" src="PFP.png" alt="Profile picture" />

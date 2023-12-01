@@ -8,28 +8,43 @@
     max-width: 1200px;
     height: 100vh;
     max-height: 900px;
-}
 
-.home-intro-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: globals.$small-margin;
-    margin-right: globals.$big-margin;
-    width: 600px;
-}
+    .home-intro-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: globals.$small-margin;
+        margin-right: globals.$big-margin;
+        width: 600px;
 
-.download-button {
-    border: 1px solid #e0e0e0;
-    padding: 15px 25px;
-    text-decoration: none;
-
-    &:hover {
-        background-color: #f2f2f2;
+        .game-entity-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
     }
-}
 
-#pfp {
-    width: 384px;
-    image-rendering: pixelated;
+    #pfp {
+        width: 384px;
+        image-rendering: pixelated;
+    }
+
+    @media screen and (max-width: globals.$mobile-width) {
+        flex-direction: column-reverse;
+        margin-top: 100px;
+        margin-bottom: #{2 * globals.$big-margin};
+        max-width: 360px;
+        height: auto;
+        max-height: auto;
+
+        #pfp {
+            margin-bottom: globals.$medium-margin;
+            width: 100%;
+        }
+
+        .home-intro-wrapper {
+            margin-right: 0;
+            width: 100%;
+        }
+    }
 }

@@ -11,8 +11,6 @@ const mdxMap: Record<string, ComponentType<MDXProps>> = {
     HkclrDescription: dynamic(() => import('@/data/HkclrDescription.mdx')),
     CuhkDescription: dynamic(() => import('@/data/CuhkDescription.mdx')),
     MyStory: dynamic(() => import('@/data/MyStory.mdx')),
-    AppStoreIcon: dynamic(() => import('@/data/AppStoreIcon.mdx')),
-    GooglePlayIcon: dynamic(() => import('@/data/GooglePlayIcon.mdx')),
 };
 
 export default function MDXLoader(props: { file: string }) {

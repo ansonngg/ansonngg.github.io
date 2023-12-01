@@ -11,7 +11,7 @@
         .table-item-content {
             display: flex;
             flex-wrap: wrap;
-            gap: globals.$medium-margin;
+            gap: globals.$small-margin globals.$medium-margin;
         }
     }
 }
