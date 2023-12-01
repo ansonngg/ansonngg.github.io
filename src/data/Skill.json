@@ -7,12 +7,7 @@
     {
         "name": "Game/Graphics",
         "icon": "gamepad-2",
-        "items": [
-            "DirectX 12 & HLSL",
-            "OpenGL & GLSL",
-            "Unity",
-            "Unreal Engine"
-        ]
+        "items": ["DirectX 12 & HLSL", "OpenGL & GLSL", "Unity", "Unreal Engine"]
     },
     {
         "name": "Tools",

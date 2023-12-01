@@ -1,0 +1,33 @@
+@use '@/app/globals';
+
+.project-list > .floating {
+    display: flex;
+
+    &:not(:last-child) {
+        margin-bottom: globals.$big-margin;
+    }
+
+    img {
+        margin-right: globals.$big-margin;
+        width: 370px;
+    }
+
+    .project-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: globals.$medium-margin;
+        width: 564px;
+
+        .tag-list {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+
+            .floating {
+                padding: 6px 10px;
+            }
+        }
+    }
+}

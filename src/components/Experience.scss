@@ -1,0 +1,9 @@
+@use '@/app/globals';
+
+.experience-table .table-item {
+    padding-left: 0;
+
+    &:not(:last-child) {
+        margin-bottom: globals.$big-margin;
+    }
+}

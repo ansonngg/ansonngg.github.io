@@ -1,0 +1,23 @@
+[
+    {
+        "organization": "Madhead",
+        "title": "Programmer",
+        "period": "Jun 2022 – Jun 2023",
+        "pastTitles": [],
+        "description": "MadheadDescription"
+    },
+    {
+        "organization": "Hong Kong Centre for Logistics Robotics",
+        "title": "Assistant Engineer",
+        "period": "Aug 2021 – Jun 2022",
+        "pastTitles": [],
+        "description": "HkclrDescription"
+    },
+    {
+        "organization": "The Chinese University of Hong Kong",
+        "title": "Underguaduate Student",
+        "period": "Sep 2017 – Jul 2021",
+        "pastTitles": [],
+        "description": "CuhkDescription"
+    }
+]

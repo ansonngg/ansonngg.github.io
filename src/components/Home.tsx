@@ -17,11 +17,11 @@ export default function Home() {
                     <IconButton name="github" link="https://github.com/ansonngg" />
                     <IconButton name="linkedin" link="https://www.linkedin.com/in/anson-ng-11145b206/" />
                 </div>
-                <a className="download-button" href="ANSON_NG_Resume.docx" download="">
+                <a className="download-button rounded-corner" href="ANSON_NG_Resume.docx" download="">
                     <IconHeadedText name="download"><b>Download Resume</b></IconHeadedText>
                 </a>
             </div>
-            <img className="floating" id="pfp" src="PFP.png" alt="Profile picture" />
+            <img className="floating rounded-corner" id="pfp" src="PFP.png" alt="Profile picture" />
         </div>
     );
 }

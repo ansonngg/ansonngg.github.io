@@ -10,6 +10,7 @@
 
         .table-item-content {
             display: flex;
+            flex-wrap: wrap;
             gap: globals.$medium-margin;
         }
     }

@@ -7,11 +7,16 @@ $big-margin: 40px;
 $medium-margin: 25px;
 $small-margin: 15px;
 
+@mixin set-margin($vertical-margin, $horizontal-margin) {
+    margin: $vertical-margin $horizontal-margin;
+    width: calc(100% - 2 * #{$horizontal-margin});
+}
+
 @mixin set-body-margin($vertical-margin) {
-    margin: $vertical-margin 50px;
+    @include set-margin($vertical-margin, 50px);
 
     @media screen and (max-width: $mobile-width) {
-        margin: $vertical-margin 20px;
+        @include set-margin($vertical-margin, 20px);
     }
 }
 
@@ -43,6 +48,14 @@ p {
 
 .floating {
     box-shadow: 0 0 10px rgba(#000000, 0.1);
+}
+
+.rounded-corner {
+    border-radius: 10px;
+}
+
+.card-padding {
+    padding: 20px 25px;
 }
 
 .icon-button-list {

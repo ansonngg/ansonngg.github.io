@@ -14,7 +14,6 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
 
     @include globals.set-body-margin(0);
 }
