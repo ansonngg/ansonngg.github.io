@@ -12,11 +12,11 @@ export default function NavbarItem(props: { target: string; callback?: () => voi
         <div
             className="navbar-item"
             onClick={() => {
-                OnClick(props.target);
-
                 if (props.callback) {
                     props.callback();
                 }
+
+                OnClick(props.target);
             }}
         >
             <b>{props.children}</b>

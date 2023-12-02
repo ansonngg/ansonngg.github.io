@@ -23,7 +23,7 @@ experiences.forEach((experience, experienceIndex) => {
 
 export default function Experience() {
     return (
-        <Section title="Experience" link="experience-anchor">
+        <Section title="Experience" link="experience">
             <div className="experience-table">{experienceList}</div>
         </Section>
     );

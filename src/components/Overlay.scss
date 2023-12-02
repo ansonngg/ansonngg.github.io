@@ -26,12 +26,14 @@
 
         @include globals.set-body-margin(globals.$header-size);
 
+        margin-bottom: 0;
+
         &.navbar-menu {
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            gap: #{2 * globals.$big-margin};
+            gap: min(calc((100vh - 305px) / 4), #{2 * globals.$big-margin});
             margin-top: 0;
             height: 100%;
 
@@ -40,7 +42,7 @@
             }
         }
 
-        & > *:last-child {
+        &:not(.navbar-menu) > *:last-child {
             padding-bottom: globals.$header-size;
         }
     }

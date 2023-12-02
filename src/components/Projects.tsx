@@ -44,7 +44,7 @@ projects.forEach((project, projectIndex) => {
 
 export default function Projects() {
     return (
-        <Section title="Projects" link="projects-anchor">
+        <Section title="Projects" link="projects">
             <div className="project-list">{projectList}</div>
         </Section>
     );

@@ -24,7 +24,7 @@ skills.forEach((skill, skillIndex) => {
 
 export default function AboutMe() {
     return (
-        <Section title="About Me" link="about-me-anchor">
+        <Section title="About Me" link="about-me">
             <div>
                 <MDXLoader file="SelfIntro" />
             </div>

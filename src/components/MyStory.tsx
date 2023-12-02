@@ -3,7 +3,7 @@ import Section from './Section';
 
 export default function MyStory() {
     return (
-        <Section title="My Story" link="my-story-anchor">
+        <Section title="My Story" link="my-story">
             <MDXLoader file="MyStory" />
         </Section>
     );

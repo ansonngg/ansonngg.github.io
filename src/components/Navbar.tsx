@@ -15,10 +15,10 @@ export default function Navbar() {
                 <img id="logo" src="Logo.png" alt="Logo" />
                 <div className="navbar-item-list">
                     <NavbarItem target="home">Home</NavbarItem>
-                    <NavbarItem target="about-me-anchor">About Me</NavbarItem>
-                    <NavbarItem target="experience-anchor">Experience</NavbarItem>
-                    <NavbarItem target="projects-anchor">Projects</NavbarItem>
-                    <NavbarItem target="my-story-anchor">My Story</NavbarItem>
+                    <NavbarItem target="about-me">About Me</NavbarItem>
+                    <NavbarItem target="experience">Experience</NavbarItem>
+                    <NavbarItem target="projects">Projects</NavbarItem>
+                    <NavbarItem target="my-story">My Story</NavbarItem>
                 </div>
                 <Overlay button={<IconButton icon="mingcute:menu-line" size={32} />} buttonClass="navbar-menu-button" />
             </div>

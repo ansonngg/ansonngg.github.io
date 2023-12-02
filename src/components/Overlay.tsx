@@ -33,16 +33,16 @@ export default function Overlay(props: { button: React.ReactNode; buttonClass?: 
                         <NavbarItem target="home" callback={closeOverlay}>
                             Home
                         </NavbarItem>
-                        <NavbarItem target="about-me-anchor" callback={closeOverlay}>
+                        <NavbarItem target="about-me" callback={closeOverlay}>
                             About Me
                         </NavbarItem>
-                        <NavbarItem target="experience-anchor" callback={closeOverlay}>
+                        <NavbarItem target="experience" callback={closeOverlay}>
                             Experience
                         </NavbarItem>
-                        <NavbarItem target="projects-anchor" callback={closeOverlay}>
+                        <NavbarItem target="projects" callback={closeOverlay}>
                             Projects
                         </NavbarItem>
-                        <NavbarItem target="my-story-anchor" callback={closeOverlay}>
+                        <NavbarItem target="my-story" callback={closeOverlay}>
                             My Story
                         </NavbarItem>
                     </div>
