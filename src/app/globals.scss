@@ -23,6 +23,7 @@ $small-margin: 15px;
 }
 
 * {
+    transition: background-color 0.2s, color 0.2s;
     margin: 0;
     box-sizing: border-box;
     font-size: $font-size;
