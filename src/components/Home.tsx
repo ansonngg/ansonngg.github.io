@@ -12,7 +12,7 @@ export default function Home() {
                     <GameEntity entityId={0}>Hi, I'm Anson Ng</GameEntity>
                     <GameEntity entityId={1}>A Game Developer</GameEntity>
                 </div>
-                <div>
+                <div className="home-intro">
                     <MDXLoader file="HomeIntro" />
                 </div>
                 <div className="icon-button-list">
@@ -25,7 +25,12 @@ export default function Home() {
                     </IconHeadedText>
                 </a>
             </div>
-            <img className="floating rounded-corner" id="pfp" src="PFP.png" alt="Profile picture" />
+            <img
+                className="floating rounded-corner"
+                id="profile-picture"
+                src="ProfilePicture.png"
+                alt="Profile picture"
+            />
         </div>
     );
 }

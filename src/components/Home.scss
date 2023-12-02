@@ -24,27 +24,36 @@
         }
     }
 
-    #pfp {
+    #profile-picture {
         width: 384px;
         image-rendering: pixelated;
     }
 
     @media screen and (max-width: globals.$mobile-width) {
         flex-direction: column-reverse;
-        margin-top: 100px;
         margin-bottom: #{2 * globals.$big-margin};
         max-width: 360px;
         height: auto;
-        max-height: auto;
+        max-height: none;
+        padding-top: calc(globals.$header-size + var(--body-margin));
 
-        #pfp {
+        #profile-picture {
             margin-bottom: globals.$medium-margin;
             width: 100%;
         }
 
         .home-intro-wrapper {
+            align-items: center;
             margin-right: 0;
             width: 100%;
+
+            .game-entity-wrapper {
+                align-items: center;
+            }
+
+            .home-intro {
+                text-align: center;
+            }
         }
     }
 }

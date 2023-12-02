@@ -1,10 +1,14 @@
 'use client';
 
+import { useState } from 'react';
 import IconButton from './IconButton';
 import NavbarItem from './NavbarItem';
+import Overlay from './Overlay';
 import './Navbar.scss';
 
 export default function Navbar() {
+    const [isMenuVisible, setIsMenuVisible] = useState(false);
+
     return (
         <nav className="floating">
             <div className="navbar-wrapper">
@@ -16,9 +20,7 @@ export default function Navbar() {
                     <NavbarItem target="projects-anchor">Projects</NavbarItem>
                     <NavbarItem target="my-story-anchor">My Story</NavbarItem>
                 </div>
-                <div className="navbar-menu">
-                    <IconButton icon="mingcute:menu-line" size={32} />
-                </div>
+                <Overlay button={<IconButton icon="mingcute:menu-line" size={32} />} buttonClass="navbar-menu-button" />
             </div>
         </nav>
     );

@@ -1,0 +1,56 @@
+@use '@/app/globals';
+
+.overlay {
+    position: fixed;
+    inset: 0;
+    display: none;
+    overflow-y: scroll;
+    background-color: rgba(#ffffff, 0.8);
+    backdrop-filter: blur(20px);
+
+    .overlay-header {
+        position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        width: 100%;
+        height: 80px;
+
+        .icon-button {
+            margin-right: var(--body-margin);
+        }
+    }
+
+    .overlay-content {
+        max-width: 1024px;
+
+        @include globals.set-body-margin(globals.$header-size);
+
+        &.navbar-menu {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: #{2 * globals.$big-margin};
+            margin-top: 0;
+            height: 100%;
+
+            b {
+                font-size: 24px;
+            }
+        }
+
+        & > *:last-child {
+            padding-bottom: globals.$header-size;
+        }
+    }
+
+    &.visible {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.no-scroll {
+    overflow: hidden;
+}

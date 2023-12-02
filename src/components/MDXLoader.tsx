@@ -10,6 +10,9 @@ const mdxMap: Record<string, ComponentType<MDXProps>> = {
     MadheadDescription: dynamic(() => import('@/data/MadheadDescription.mdx')),
     HkclrDescription: dynamic(() => import('@/data/HkclrDescription.mdx')),
     CuhkDescription: dynamic(() => import('@/data/CuhkDescription.mdx')),
+    TOSDescription: dynamic(() => import('@/data/TOSDescription.mdx')),
+    OADescription: dynamic(() => import('@/data/OADescription.mdx')),
+    VTADescription: dynamic(() => import('@/data/VTADescription.mdx')),
     MyStory: dynamic(() => import('@/data/MyStory.mdx')),
 };
 

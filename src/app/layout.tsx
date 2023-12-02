@@ -5,7 +5,7 @@ import './globals.scss';
 const montserrat = Montserrat({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-    title: 'Anson Ng',
+    title: 'Anson Ng | Game Developer',
     description: 'Portfolio of Anson Ng',
 };
 

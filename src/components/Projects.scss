@@ -13,7 +13,7 @@
             margin-bottom: globals.$big-margin;
         }
 
-        img {
+        & > img {
             margin-right: globals.$big-margin;
             width: 500px;
         }
@@ -27,12 +27,28 @@
 
             .tag-list {
                 display: flex;
-                justify-content: center;
                 flex-wrap: wrap;
                 gap: 10px;
 
                 .floating {
                     padding: 6px 10px;
+                }
+            }
+
+            & > .tag-list {
+                justify-content: center;
+            }
+
+            .overlay-content {
+                img {
+                    margin: globals.$medium-margin 0;
+                    width: 100%;
+                    max-width: 1024px;
+                }
+
+                .tag-list,
+                .icon-button-list {
+                    margin-bottom: globals.$small-margin;
                 }
             }
         }
@@ -42,7 +58,7 @@
             width: 100%;
             max-width: 550px;
 
-            img {
+            & > img {
                 margin-bottom: globals.$medium-margin;
                 margin-right: 0;
                 width: 100%;

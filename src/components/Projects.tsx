@@ -1,4 +1,6 @@
 import IconButton from './IconButton';
+import MDXLoader from './MDXLoader';
+import Overlay from './Overlay';
 import Section from './Section';
 import projects from '@/data/Projects.json';
 import './Projects.scss';
@@ -28,9 +30,13 @@ projects.forEach((project, projectIndex) => {
                 <b>{project.name}</b>
                 <div className="tag-list">{tagList}</div>
                 <div className="icon-button-list">{buttonList}</div>
-                <div className="download-button rounded-corner">
-                    <b>Read More</b>
-                </div>
+                <Overlay button={<b>Read More</b>} buttonClass="download-button rounded-corner">
+                    <b>{project.name}</b>
+                    <img className="rounded-corner" src={project.image} alt={project.image} />
+                    <div className="tag-list">{tagList}</div>
+                    <div className="icon-button-list">{buttonList}</div>
+                    <MDXLoader file={project.description} />
+                </Overlay>
             </div>
         </div>
     );

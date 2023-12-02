@@ -12,13 +12,15 @@
                 "icon": "mingcute:google-play-line",
                 "link": "https://play.google.com/store/apps/details?id=com.madhead.tos.zh"
             }
-        ]
+        ],
+        "description": "TOSDescription"
     },
     {
         "name": "Operation: Apocalypse",
         "image": "OAImage.png",
         "tags": ["School Project", "Game Design", "Level Design", "Code", "C#", "Unity"],
-        "buttons": []
+        "buttons": [],
+        "description": "OADescription"
     },
     {
         "name": "Visit the Alien",
@@ -29,6 +31,7 @@
                 "icon": "mingcute:github-line",
                 "link": "https://github.com/ansonngg/csci3260-asg"
             }
-        ]
+        ],
+        "description": "VTADescription"
     }
 ]
