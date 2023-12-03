@@ -1,0 +1,74 @@
+@use '@/app/globals';
+
+.overlay {
+    position: fixed;
+    inset: 0;
+    display: none;
+    overflow-y: scroll;
+    background-color: rgba(#ffffff, 0.8);
+    backdrop-filter: blur(20px);
+
+    .overlay-header {
+        position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        width: 100%;
+        height: 80px;
+
+        .icon-button {
+            margin-right: var(--body-margin);
+        }
+    }
+
+    .overlay-content {
+        max-width: 1024px;
+
+        @include globals.set-body-margin(globals.$header-size);
+
+        margin-bottom: 0;
+
+        &.navbar-menu {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: min(calc((100vh - 305px) / 4), #{2 * globals.$big-margin});
+            margin-top: 0;
+            height: 100%;
+
+            b {
+                font-size: 24px;
+            }
+        }
+
+        &:not(.navbar-menu) > *:last-child {
+            padding-bottom: globals.$header-size;
+        }
+    }
+
+    &.visible {
+        display: flex;
+        justify-content: center;
+
+        & > * {
+            animation: fade-in 0.5s;
+        }
+    }
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,9 @@
+@use '@/app/globals';
+
+.navbar-item {
+    cursor: pointer;
+
+    &:hover b {
+        color: #1769aa;
+    }
+}

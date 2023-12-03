@@ -1,5 +1,0 @@
-Before learning about me, did you discover the Easter egg above? There's actually a minigame! (Only supported on viewports not less than 1280 × 900.)
-
-I'm a game developer and programmer with experience working on a published game with a large codebase, namely "Tower of Saviors." In this game, my responsibilities included maintenance through debugging and revamping, gameplay implementation, and designing visual effects. After revamping the code, the gameplay now supports more features, and the number of bugs has significantly decreased. Additionally, based on player reviews, some of my visual effects received an average rating of 4 out of 5.
-
-Currently, I am seeking to explore different technical positions in game development, whether it be as a gameplay, graphics, tool, or engine programmer. I am open to working on any types of games, ranging from indie to AAA titles, as I am eager to gain diverse experiences in the field!

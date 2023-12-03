@@ -1,0 +1,17 @@
+[
+    {
+        "name": "Programming",
+        "icon": "mingcute:code-line",
+        "items": ["C/C++", "C#", "Java", "JavaScript", "Python"]
+    },
+    {
+        "name": "Game/Graphics",
+        "icon": "mingcute:game-2-line",
+        "items": ["DirectX 12 & HLSL", "OpenGL & GLSL", "Unity", "Unreal Engine"]
+    },
+    {
+        "name": "Tools",
+        "icon": "mingcute:tool-line",
+        "items": ["Git", "Jenkins", "Jira", "Figma", "Photoshop"]
+    }
+]

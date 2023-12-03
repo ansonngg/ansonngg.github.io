@@ -1,0 +1,16 @@
+@use '@/app/globals';
+
+section {
+    margin-bottom: #{2 * globals.$big-margin};
+    width: 100%;
+    max-width: 1024px;
+    scroll-margin-top: 92px;
+}
+
+.section-title {
+    margin-bottom: globals.$big-margin;
+
+    b {
+        font-size: 18px;
+    }
+}

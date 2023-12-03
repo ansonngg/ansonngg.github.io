@@ -1,0 +1,9 @@
+@use '@/app/globals';
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include globals.set-body-margin(0);
+}

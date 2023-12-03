@@ -1,0 +1,27 @@
+@use '@/app/globals';
+
+.table-item {
+    display: flex;
+    align-items: flex-start;
+
+    .table-item-title {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: globals.$big-margin;
+    }
+
+    .table-item-content {
+        flex: 1;
+    }
+
+    @media screen and (max-width: globals.$tablet-width) {
+        flex-direction: column;
+
+        .table-item-title {
+            display: initial;
+            margin-bottom: globals.$small-margin;
+            margin-right: 0;
+            width: initial;
+        }
+    }
+}

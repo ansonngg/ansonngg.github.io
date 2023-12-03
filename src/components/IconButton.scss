@@ -1,0 +1,11 @@
+.icon-button {
+    cursor: pointer;
+
+    svg {
+        display: block;
+    }
+
+    &:hover * {
+        color: #1769aa;
+    }
+}

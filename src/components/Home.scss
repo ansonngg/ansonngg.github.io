@@ -1,0 +1,59 @@
+@use '@/app/globals';
+
+#home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+    height: 100vh;
+    max-height: 900px;
+
+    .home-intro-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: globals.$small-margin;
+        margin-right: globals.$big-margin;
+        width: 600px;
+
+        .game-entity-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+
+    #profile-picture {
+        width: 384px;
+        image-rendering: pixelated;
+    }
+
+    @media screen and (max-width: globals.$mobile-width) {
+        flex-direction: column-reverse;
+        margin-bottom: #{2 * globals.$big-margin};
+        max-width: 360px;
+        height: auto;
+        max-height: none;
+        padding-top: calc(globals.$header-size + var(--body-margin));
+
+        #profile-picture {
+            margin-bottom: globals.$medium-margin;
+            width: 100%;
+        }
+
+        .home-intro-wrapper {
+            align-items: center;
+            margin-right: 0;
+            width: 100%;
+
+            .game-entity-wrapper {
+                align-items: center;
+            }
+
+            .home-intro {
+                text-align: center;
+            }
+        }
+    }
+}

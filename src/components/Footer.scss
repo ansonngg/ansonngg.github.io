@@ -1,0 +1,41 @@
+@use '@/app/globals';
+
+footer {
+    display: flex;
+    border-top: #f2f2f2 solid 1px;
+    width: 100%;
+
+    .footer-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @include globals.set-body-margin(globals.$big-margin);
+
+        .social-media {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: #{2 * globals.$big-margin};
+            width: 100%;
+            max-width: 1024px;
+
+            .contact-list .icon-headed-text:not(:last-child) {
+                margin-bottom: globals.$small-margin;
+            }
+
+            @media screen and (max-width: globals.$mobile-width) {
+                flex-direction: column;
+                align-items: center;
+                width: auto;
+
+                .contact-list {
+                    margin-bottom: globals.$medium-margin;
+                }
+            }
+        }
+
+        .secondary-text {
+            text-align: center;
+        }
+    }
+}

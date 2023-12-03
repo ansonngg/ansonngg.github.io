@@ -1,0 +1,70 @@
+@use '@/app/globals';
+
+.project-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & > .floating {
+        display: flex;
+        align-items: center;
+
+        &:not(:last-child) {
+            margin-bottom: globals.$big-margin;
+        }
+
+        .project-image {
+            margin-right: globals.$big-margin;
+            width: 500px;
+        }
+
+        .project-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex: 1;
+            gap: globals.$medium-margin;
+
+            .tag-list {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
+
+                .floating {
+                    padding: 6px 10px;
+                    background-color: rgba(#ffffff, 0.4);
+                }
+            }
+
+            & > .tag-list {
+                justify-content: center;
+            }
+
+            .overlay-content {
+                width: 100%;
+                max-width: 1024px;
+
+                img {
+                    margin: globals.$medium-margin 0;
+                }
+
+                .tag-list,
+                .icon-button-list {
+                    margin-bottom: globals.$small-margin;
+                }
+            }
+        }
+
+        @media screen and (max-width: globals.$laptop-width) {
+            flex-direction: column;
+            width: 100%;
+            max-width: 550px;
+
+            .project-image {
+                margin-bottom: globals.$medium-margin;
+                margin-right: 0;
+                width: 100%;
+            }
+        }
+    }
+}

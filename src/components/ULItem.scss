@@ -1,0 +1,12 @@
+@use '@/app/globals';
+
+.ul-item {
+    display: flex;
+
+    .icon-wrapper {
+        display: flex;
+        align-items: center;
+        margin-right: 5px;
+        height: #{globals.$font-size * globals.$line-height};
+    }
+}

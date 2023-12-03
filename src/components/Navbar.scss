@@ -1,0 +1,36 @@
+@use '@/app/globals';
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    height: globals.$header-size;
+    background-color: #ffffff;
+}
+
+.navbar-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include globals.set-body-margin(0);
+}
+
+.navbar-item-list {
+    display: flex;
+    gap: globals.$big-margin;
+
+    @media screen and (max-width: globals.$tablet-width) {
+        display: none;
+    }
+}
+
+.navbar-menu-button {
+    display: none;
+
+    @media screen and (max-width: globals.$tablet-width) {
+        display: initial;
+    }
+}
