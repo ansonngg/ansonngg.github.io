@@ -63,7 +63,7 @@ export default function StartGame(event) {
 }
 
 function InitGame(event) {
-    document.getElementById('home').scrollIntoView({ behavior: 'smooth' });
+    document.getElementById('home').scrollIntoView();
     document.body.classList.add('no-scroll');
 
     navbar.classList.add('up-fade-out');
