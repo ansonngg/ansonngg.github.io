@@ -3,6 +3,7 @@ import IconButton from './IconButton';
 import IconHeadedText from './IconHeadedText';
 import MDXLoader from './MDXLoader';
 import './Home.scss';
+import '@/library/Game.css';
 
 export default function Home() {
     return (
@@ -31,6 +32,7 @@ export default function Home() {
                 src="ProfilePicture.png"
                 alt="Profile picture"
             />
+            <div className="timer">3</div>
         </div>
     );
 }
