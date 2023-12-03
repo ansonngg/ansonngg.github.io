@@ -13,7 +13,7 @@
             margin-bottom: globals.$big-margin;
         }
 
-        & > img {
+        .project-image {
             margin-right: globals.$big-margin;
             width: 500px;
         }
@@ -41,10 +41,11 @@
             }
 
             .overlay-content {
+                width: 100%;
+                max-width: 1024px;
+
                 img {
                     margin: globals.$medium-margin 0;
-                    width: 100%;
-                    max-width: 1024px;
                 }
 
                 .tag-list,
@@ -59,7 +60,7 @@
             width: 100%;
             max-width: 550px;
 
-            & > img {
+            .project-image {
                 margin-bottom: globals.$medium-margin;
                 margin-right: 0;
                 width: 100%;

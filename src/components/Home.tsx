@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import GameEntity from './GameEntity';
 import IconButton from './IconButton';
 import IconHeadedText from './IconHeadedText';
@@ -10,7 +11,7 @@ export default function Home() {
         <div id="home">
             <div className="home-intro-wrapper">
                 <div className="game-entity-wrapper">
-                    <GameEntity entityId={0}>Hi, I'm Anson Ng</GameEntity>
+                    <GameEntity entityId={0}>Hi, I&apos;m Anson Ng</GameEntity>
                     <GameEntity entityId={1}>A Game Developer</GameEntity>
                 </div>
                 <div className="home-intro">
@@ -26,12 +27,16 @@ export default function Home() {
                     </IconHeadedText>
                 </a>
             </div>
-            <img
-                className="floating rounded-corner"
-                id="profile-picture"
-                src="ProfilePicture.png"
-                alt="Profile picture"
-            />
+            <div className="floating rounded-corner" id="profile-picture">
+                <Image
+                    src="/ProfilePicture.png"
+                    alt="Profile picture"
+                    width={0}
+                    height={0}
+                    sizes="100vw"
+                    style={{ width: '100%', height: 'auto' }}
+                />
+            </div>
             <div className="timer">3</div>
         </div>
     );

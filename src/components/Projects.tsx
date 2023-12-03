@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import IconButton from './IconButton';
 import MDXLoader from './MDXLoader';
 import Overlay from './Overlay';
@@ -25,14 +26,32 @@ projects.forEach((project, projectIndex) => {
 
     projectList.push(
         <div key={projectIndex} className="floating rounded-corner card-padding">
-            <img className="rounded-corner" src={project.image} alt={project.image} />
+            <div className="project-image">
+                <Image
+                    className="rounded-corner"
+                    src={project.image}
+                    alt={project.image}
+                    width={0}
+                    height={0}
+                    sizes="100vw"
+                    style={{ width: '100%', height: 'auto' }}
+                />
+            </div>
             <div className="project-content">
                 <b>{project.name}</b>
                 <div className="tag-list">{tagList}</div>
                 <div className="icon-button-list">{buttonList}</div>
                 <Overlay button={<b>Read More</b>} buttonClass="download-button rounded-corner">
                     <b>{project.name}</b>
-                    <img className="rounded-corner" src={project.image} alt={project.image} />
+                    <Image
+                        className="rounded-corner"
+                        src={project.image}
+                        alt={project.image}
+                        width={0}
+                        height={0}
+                        sizes="100vw"
+                        style={{ width: '100%', height: 'auto' }}
+                    />
                     <div className="tag-list">{tagList}</div>
                     <div className="icon-button-list">{buttonList}</div>
                     <MDXLoader file={project.description} />

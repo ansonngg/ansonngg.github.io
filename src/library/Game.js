@@ -166,6 +166,13 @@ async function EndGame() {
 
     await new Promise((r) => setTimeout(r, 3000));
 
+    home.style.border = '';
+    home.style['border-radius'] = '';
+    home.style.overflow = '';
+
+    timer.style = null;
+    timer.innerHTML = '3';
+
     navbar.classList.add('end-game');
     notEnemy.classList.add('end-game');
     otherElements.forEach((element) => {
@@ -176,10 +183,6 @@ async function EndGame() {
 
     navbar.classList.remove('up-fade-out');
     navbar.classList.remove('end-game');
-
-    home.style.border = '';
-    home.style['border-radius'] = '';
-    home.style.overflow = '';
 
     enemy.classList.remove('enemy');
     enemy.onclick = () => StartGame(selectedId);
@@ -198,9 +201,6 @@ async function EndGame() {
         element.classList.remove('down-fade-out');
         element.classList.remove('end-game');
     });
-
-    timer.style = null;
-    timer.innerHTML = '3';
 }
 
 function SpinAttack(timeStamp) {

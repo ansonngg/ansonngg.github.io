@@ -1,7 +1,7 @@
 [
     {
         "name": "Tower of Saviors",
-        "image": "TOSImage.png",
+        "image": "/TOSImage.png",
         "tags": ["Professional Project", "Gameplay Programming", "Visual Effect", "Maintenance", "C#", "Unity"],
         "buttons": [
             {
@@ -17,14 +17,14 @@
     },
     {
         "name": "Operation: Apocalypse",
-        "image": "OAImage.png",
+        "image": "/OAImage.png",
         "tags": ["School Project", "Game Design", "Level Design", "Code", "C#", "Unity"],
         "buttons": [],
         "description": "OADescription"
     },
     {
         "name": "Visit the Alien",
-        "image": "VTAImage.png",
+        "image": "/VTAImage.png",
         "tags": ["School Project", "Graphics Programming", "C++", "OpenGL"],
         "buttons": [
             {
