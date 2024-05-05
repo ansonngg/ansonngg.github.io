@@ -19,7 +19,12 @@
         "name": "Operation: Apocalypse",
         "image": "/OAImage.png",
         "tags": ["School Project", "Game Design", "Level Design", "Code", "C#", "Unity"],
-        "buttons": [],
+        "buttons": [
+            {
+                "icon": "mingcute:github-line",
+                "link": "https://github.com/ansonngg/csci4120-project"
+            }
+        ],
         "description": "OADescription"
     },
     {
@@ -29,7 +34,7 @@
         "buttons": [
             {
                 "icon": "mingcute:github-line",
-                "link": "https://github.com/ansonngg/csci3260-asg"
+                "link": "https://github.com/ansonngg/csci3260-project"
             }
         ],
         "description": "VTADescription"
