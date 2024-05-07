@@ -12,10 +12,17 @@ nav {
 
 .navbar-wrapper {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 
     @include globals.set-body-margin(0);
+}
+
+.navbar-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1024px;
 }
 
 .navbar-item-list {

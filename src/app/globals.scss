@@ -70,11 +70,7 @@ p {
 }
 
 .card-padding {
-    padding: 20px 25px;
-
-    @media screen and (max-width: $mobile-width) {
-        padding: 20px;
-    }
+    padding: 24px;
 }
 
 .icon-button-list {

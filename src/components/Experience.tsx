@@ -12,7 +12,7 @@ experiences.forEach((experience, experienceIndex) => {
             key={experienceIndex}
             title={<p>{experience.period}</p>}
             className="floating rounded-corner card-padding"
-            titleWidth="180px"
+            titleWidth="176px"
         >
             <p>
                 <b>{experience.title}</b> @ {experience.organization}
