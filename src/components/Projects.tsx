@@ -25,10 +25,9 @@ projects.forEach((project, projectIndex) => {
     });
 
     projectList.push(
-        <div key={projectIndex} className="floating rounded-corner card-padding">
+        <div key={projectIndex} className="floating rounded-corner">
             <div className="project-image">
                 <Image
-                    className="rounded-corner"
                     src={project.image}
                     alt={project.image}
                     width={0}

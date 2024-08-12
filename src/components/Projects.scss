@@ -8,14 +8,16 @@
     & > .floating {
         display: flex;
         align-items: center;
+        height: 540px / 16 * 9;
+        overflow: hidden;
 
         &:not(:last-child) {
             margin-bottom: globals.$big-margin;
         }
 
         .project-image {
-            margin-right: globals.$big-margin;
-            width: 500px;
+            width: 540px;
+            line-height: 0;
         }
 
         .project-content {
@@ -24,6 +26,7 @@
             align-items: center;
             flex: 1;
             gap: globals.$medium-margin;
+            margin: globals.$medium-margin;
 
             .tag-list {
                 display: flex;
@@ -59,11 +62,10 @@
         @media screen and (max-width: globals.$laptop-width) {
             flex-direction: column;
             width: 100%;
+            height: auto;
             max-width: 550px;
 
             .project-image {
-                margin-bottom: globals.$medium-margin;
-                margin-right: 0;
                 width: 100%;
             }
         }
