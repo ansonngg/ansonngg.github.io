@@ -1,0 +1,69 @@
+﻿@use '@/app/globals';
+
+.timeline {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: globals.$big-margin;
+
+    .timeline-item {
+        position: relative;
+        display: flex;
+        
+        .timeline-item-title {
+            display: flex;
+            justify-content: flex-end;
+            margin-right: 2 * globals.$medium-margin - 1px;
+            width: 200px;
+        }
+        
+        .timeline-item-content {
+            flex: 1;
+        }
+        
+        &::after {
+            content: '';
+            position: absolute;
+            z-index: 1;
+            top: globals.$font-size * (globals.$line-height - 1) / 2;
+            left : 200px + globals.$medium-margin - globals.$font-size / 2;
+            border: 1px solid globals.$font-color;
+            border-radius: 50%;
+            width: globals.$font-size - 3px;
+            height: globals.$font-size - 3px;
+            background-color: white;
+        }
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 200px + globals.$medium-margin - 1px;
+        width: 1px;
+        background-color: globals.$font-color;
+    }
+
+    @media screen and (max-width: globals.$tablet-width) {
+        .timeline-item {
+            flex-direction: column;
+            margin-left: globals.$font-size / 2 - 1px + globals.$medium-margin - 1px;
+
+            .timeline-item-title {
+                display: initial;
+                margin-bottom: globals.$small-margin;
+                margin-right: 0;
+                width: initial;
+            }
+            
+            &::after {
+                left: -(globals.$font-size / 2 - 1px + globals.$medium-margin - 1px);
+            }
+        }
+        
+        &::after {
+            left: globals.$font-size / 2 - 1px;
+        }
+    }
+}

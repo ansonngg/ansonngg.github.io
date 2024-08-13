@@ -3,6 +3,7 @@ $tablet-width: 768px;
 $mobile-width: 480px;
 
 $font-size: 16px;
+$font-color: #212121;
 $line-height: 1.75;
 $header-size: 80px;
 $big-margin: 40px;
@@ -27,7 +28,7 @@ $small-margin: 15px;
     margin: 0;
     box-sizing: border-box;
     font-size: $font-size;
-    color: #212121;
+    color: $font-color;
 }
 
 code {

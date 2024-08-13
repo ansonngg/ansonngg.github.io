@@ -1,31 +1,34 @@
+import { ReactElement } from 'react';
 import MDXLoader from './MDXLoader';
 import Section from './Section';
-import TableItem from './TableItem';
+import Timeline from './Timeline';
 import experiences from '@/data/Experiences.json';
 import './Experience.scss';
 
-const experienceList: JSX.Element[] = [];
+const titles: ReactElement[] = [];
+const contents: ReactElement[] = [];
 
-experiences.forEach((experience, experienceIndex) => {
-    experienceList.push(
-        <TableItem
-            key={experienceIndex}
-            title={<p>{experience.period}</p>}
-            className="floating rounded-corner card-padding"
-            titleWidth="176px"
-        >
+experiences.forEach(experience => {
+    titles.push(
+        <p>
+            {experience.period}
+        </p>
+    );
+    
+    contents.push(
+        <>
             <p>
                 <b>{experience.title}</b> @ {experience.organization}
             </p>
             <MDXLoader file={experience.description} />
-        </TableItem>
-    );
+        </>
+    )
 });
 
 export default function Experience() {
     return (
         <Section title="Experience" link="experience">
-            <div className="experience-table">{experienceList}</div>
+            <Timeline titles={titles} contents={contents}></Timeline>
         </Section>
     );
 }
