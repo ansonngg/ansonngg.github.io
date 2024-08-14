@@ -18,7 +18,7 @@
     {
         "name": "Operation: Apocalypse",
         "image": "/OAImage.png",
-        "tags": ["School Project", "Game Design", "Level Design", "Code", "C#", "Unity"],
+        "tags": ["School Project", "Game Design", "Level Design", "C#", "Unity"],
         "buttons": [
             {
                 "icon": "mingcute:github-line",

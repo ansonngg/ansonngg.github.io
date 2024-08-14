@@ -21,7 +21,7 @@ export default function Home() {
                     <IconButton icon="mingcute:github-line" link="https://github.com/ansonngg" />
                     <IconButton icon="mingcute:linkedin-line" link="https://www.linkedin.com/in/anson-ng-11145b206/" />
                 </div>
-                <a className="download-button rounded-corner" href="ANSON_NG_Resume.docx" download="">
+                <a className="download-button rounded-corner" href="ANSON_NG_Resume.pdf" download="">
                     <IconHeadedText icon="mingcute:download-2-line">
                         <b>Download Resume</b>
                     </IconHeadedText>

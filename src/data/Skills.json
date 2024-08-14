@@ -2,12 +2,17 @@
     {
         "name": "Programming",
         "icon": "mingcute:code-line",
-        "items": ["C/C++", "C#", "Java", "JavaScript", "Python"]
+        "items": ["C", "C++", "C#", "JavaScript", "TypeScript", "Lua", "Java", "Python"]
     },
     {
         "name": "Game/Graphics",
         "icon": "mingcute:game-2-line",
-        "items": ["DirectX 12 & HLSL", "OpenGL & GLSL", "Unity", "Unreal Engine"]
+        "items": ["DirectX 12", "HLSL", "OpenGL", "GLSL", "Unity", "Unreal Engine"]
+    },
+    {
+        "name": "Web",
+        "icon": "mingcute:web-line",
+        "items": ["Node.js", "React", "Next.js", "Express", "PostgreSQL", "MongoDB"]
     },
     {
         "name": "Tools",
