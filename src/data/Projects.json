@@ -28,6 +28,18 @@
         "description": "OADescription"
     },
     {
+        "name": "OpenGL Rubik's Cube",
+        "image": "/ORCImage.png",
+        "tags": ["Personal Project", "Graphics Programming", "C++", "OpenGL"],
+        "buttons": [
+            {
+                "icon": "mingcute:github-line",
+                "link": "https://github.com/ansonngg/opengl-rubiks-cube"
+            }
+        ],
+        "description": "ORCDescription"
+    },
+    {
         "name": "Visit the Alien",
         "image": "/VTAImage.png",
         "tags": ["School Project", "Graphics Programming", "C++", "OpenGL"],
