@@ -30,7 +30,7 @@
     {
         "name": "OpenGL Rubik's Cube",
         "image": "/ORCImage.png",
-        "tags": ["Personal Project", "Graphics Programming", "C++", "OpenGL"],
+        "tags": ["Personal Project", "Graphics Programming", "C++", "OpenGL", "GLSL"],
         "buttons": [
             {
                 "icon": "mingcute:github-line",
@@ -42,7 +42,7 @@
     {
         "name": "Visit the Alien",
         "image": "/VTAImage.png",
-        "tags": ["School Project", "Graphics Programming", "C++", "OpenGL"],
+        "tags": ["School Project", "Graphics Programming", "C++", "OpenGL", "GLSL"],
         "buttons": [
             {
                 "icon": "mingcute:github-line",
