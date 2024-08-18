@@ -27,7 +27,7 @@ export default function Home() {
                     </IconHeadedText>
                 </a>
             </div>
-            <div className="floating rounded-corner" id="profile-picture">
+            <div id="profile-picture">
                 <Image
                     src="/ProfilePicture.png"
                     alt="Profile picture"
