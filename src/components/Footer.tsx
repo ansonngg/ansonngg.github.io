@@ -18,7 +18,7 @@ export default function Footer() {
                         />
                     </div>
                 </div>
-                <p className="secondary-text">&copy; 2023 Anson Ng. All rights reserved.</p>
+                <p className="secondary-text">&copy; 2024 Anson Ng. All rights reserved.</p>
             </div>
         </footer>
     );

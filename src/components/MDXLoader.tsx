@@ -11,6 +11,7 @@ const mdxMap: Record<string, ComponentType<MDXProps>> = {
     HkclrDescription: dynamic(() => import('@/data/HkclrDescription.mdx')),
     CuhkDescription: dynamic(() => import('@/data/CuhkDescription.mdx')),
     TOSDescription: dynamic(() => import('@/data/TOSDescription.mdx')),
+    GGDescription: dynamic(() => import('@/data/GGDescription.mdx')),
     OADescription: dynamic(() => import('@/data/OADescription.mdx')),
     ORCDescription: dynamic(() => import('@/data/ORCDescription.mdx')),
     VTADescription: dynamic(() => import('@/data/VTADescription.mdx')),
