@@ -2,7 +2,7 @@
     {
         "name": "Tower of Saviors",
         "image": "/TOSImage.png",
-        "tags": ["Professional Project", "Gameplay Programming", "Visual Effect", "Maintenance", "C#", "Unity"],
+        "tags": ["Commercial Project", "Live Service", "Gameplay Programming", "Visual Effect", "C#", "Unity"],
         "buttons": [
             {
                 "icon": "mingcute:appstore-line",
